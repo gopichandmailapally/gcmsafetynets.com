@@ -86,26 +86,26 @@ app.get('/:service/:city', (req, res) => {
     rendered = rendered.replace(/garware/g, 'russea');
 
   const serviceImgMap = {
-    'pigeon': '/images/services/bird-pigeon-nets.jpg',
-    'bird': '/images/services/bird-pigeon-nets.jpg',
-    'balcony': '/images/services/balcony-safety-nets.jpg',
-    'child': '/images/services/children-pet-safety-nets.jpg',
-    'pet': '/images/services/children-pet-safety-nets.jpg',
-    'construction': '/images/services/construction-safety-nets.jpg',
-    'sports': '/images/services/sports-nets-turf.jpg',
-    'cricket': '/images/services/sports-nets-turf.jpg',
-    'hdpe': '/images/services/hdpe-nets.jpg',
-    'grill': '/images/services/invisible-grills.jpg',
-    'hanger': '/images/services/cloth-hangers.jpg'
+    'pigeon': '/images/services/bird-pigeon-nets.jpg?v=1790395331',
+    'bird': '/images/services/bird-pigeon-nets.jpg?v=1790395331',
+    'balcony': '/images/services/balcony-safety-nets.jpg?v=1790395331',
+    'child': '/images/services/children-pet-safety-nets.jpg?v=1790395331',
+    'pet': '/images/services/children-pet-safety-nets.jpg?v=1790395331',
+    'construction': '/images/services/construction-safety-nets.jpg?v=1790395331',
+    'sports': '/images/services/sports-nets-turf.jpg?v=1790395331',
+    'cricket': '/images/services/sports-nets-turf.jpg?v=1790395331',
+    'hdpe': '/images/services/hdpe-nets.jpg?v=1790395331',
+    'grill': '/images/services/invisible-grills.jpg?v=1790395331',
+    'hanger': '/images/services/cloth-hangers.jpg?v=1790395331'
   };
-  let matchedImg = '/images/services/balcony-safety-nets.jpg';
+  let matchedImg = '/images/services/balcony-safety-nets.jpg?v=1790395331';
   for (const [k, v] of Object.entries(serviceImgMap)) {
     if (serviceSlug.includes(k)) {
       matchedImg = v;
       break;
     }
   }
-  rendered = rendered.replace('/images/services/bird-pigeon-nets.jpg', matchedImg);
+  rendered = rendered.replace('/images/services/bird-pigeon-nets.jpg?v=1790395331', matchedImg);
 
     return res.send(rendered);
   }
