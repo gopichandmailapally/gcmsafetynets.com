@@ -186,7 +186,9 @@ p { margin-bottom: 1rem; color: #374151; }
   background-size: cover; background-position: center;
   opacity: 0; transition: opacity 1s ease;
 }
-.hero-bg-slide.active { opacity: 0.3; }
+.hero-bg-slide.active { opacity: 0.75; transform: scale(1.03); }
+.hero-slider-section { background: #0b2214 !important; }
+.hero-bg-slide { transition: opacity 1s ease, transform 6s ease-out !important; }
 .hero-slides-text { position: relative; min-height: 160px; margin-bottom: 6px; }
 .hero-slide-text {
   position: absolute; top: 0; left: 0; width: 100%;

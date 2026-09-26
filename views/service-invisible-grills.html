@@ -239,114 +239,44 @@
 
 <section class="section">
   <div class="container">
-
-    
-    
-
-    
-    
-
-    
-    
-    <div class="price-section-card">
-      <h2>🔲 Invisible Grill — 2025 Price List</h2>
-      <div class="sub">Minimum: 300 SFT. Calculate area: Length × Height/Width (in SFT).</div>
-      <table class="ptable" style="margin-bottom:16px">
-        <thead><tr><th>Wire Thickness</th><th>Gap Spacing</th><th>Rate (₹/SFT)</th></tr></thead>
-        <tbody>
-          
-          <tr>
-            <td>1.5mm</td>
-            <td>2 inch</td>
-            <td class="hi">₹130 – ₹150</td>
-          </tr>
-          
-          <tr>
-            <td>1.5mm</td>
-            <td>3 inch</td>
-            <td class="hi">₹120 – ₹140</td>
-          </tr>
-          
-          <tr>
-            <td>2mm</td>
-            <td>2 inch</td>
-            <td class="hi">₹140 – ₹160</td>
-          </tr>
-          
-          <tr>
-            <td>2mm</td>
-            <td>3 inch</td>
-            <td class="hi">₹130 – ₹150</td>
-          </tr>
-          
-          <tr>
-            <td>2.5mm</td>
-            <td>2 inch</td>
-            <td class="hi">₹150 – ₹170</td>
-          </tr>
-          
-          <tr>
-            <td>2.5mm</td>
-            <td>3 inch</td>
-            <td class="hi">₹140 – ₹160</td>
-          </tr>
-          
-          <tr>
-            <td>3mm</td>
-            <td>2 inch</td>
-            <td class="hi">₹160 – ₹180</td>
-          </tr>
-          
-          <tr>
-            <td>3mm</td>
-            <td>3 inch</td>
-            <td class="hi">₹150 – ₹170</td>
-          </tr>
-          
-        </tbody>
-      </table>
-
-      <div class="calc-box">
-        <h3>🧮 Invisible Grill Estimator</h3>
-        <div class="calc-row">
-          <div class="calc-field"><label>Length (ft)</label><input type="number" id="ig_l" placeholder="e.g. 10" min="1"></div>
-          <div class="calc-field"><label>Height / Width (ft)</label><input type="number" id="ig_h" placeholder="e.g. 4" min="1"></div>
-          <div class="calc-field">
-            <label>Thickness</label>
-            <select id="ig_thick">
-              <option value="1.5mm">1.5mm</option>
-              <option value="2mm">2mm</option>
-              <option value="2.5mm">2.5mm</option>
-              <option value="3mm">3mm</option>
-            </select>
-          </div>
-          <div class="calc-field">
-            <label>Spacing</label>
-            <select id="ig_sp">
-              <option value="2 inch">2 inch</option>
-              <option value="3 inch">3 inch</option>
-            </select>
-          </div>
-          <button class="calc-btn" onclick="calcIG()">Calculate</button>
+    <div class="service-quality-specs-card" style="background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:32px;margin-bottom:32px;box-shadow:0 8px 24px rgba(0,0,0,0.06);">
+      <div style="display:flex;align-items:center;gap:12px;margin-bottom:20px;">
+        <div style="background:#ecfdf5;color:#10b981;width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;">
+          <i class="fas fa-certificate"></i>
         </div>
-        <div class="calc-result" id="ig_result">
-          <div class="res-area" id="ig_res_area"></div>
-          <div class="res-price" id="ig_res_price"></div>
+        <div>
+          <h2 style="font-size:22px;color:#0f172a;margin:0;font-weight:700;">Product Quality & Technical Specifications</h2>
+          <p style="color:#64748b;margin:4px 0 0;font-size:14px;">Certified high-tenacity materials tailored to your balcony & building requirements.</p>
         </div>
       </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:20px;margin-bottom:24px;">
+        <div style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f3d24;display:block;font-size:15px;margin-bottom:6px;"><i class="fas fa-layer-group" style="color:#10b981;margin-right:6px;"></i> Material Grade</strong>
+          <span style="color:#334155;font-size:14px;">100% Virgin Russea™ High-Density UV-Treated Polymer / AISI 316 SS Wire</span>
+        </div>
+        <div style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f3d24;display:block;font-size:15px;margin-bottom:6px;"><i class="fas fa-shield-alt" style="color:#10b981;margin-right:6px;"></i> Warranty Coverage</strong>
+          <span style="color:#334155;font-size:14px;">Official 5-Year Written Replacement Warranty with Free Maintenance</span>
+        </div>
+        <div style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f3d24;display:block;font-size:15px;margin-bottom:6px;"><i class="fas fa-clock" style="color:#10b981;margin-right:6px;"></i> Installation Time</strong>
+          <span style="color:#334155;font-size:14px;">Same-Day Completion within 2 to 4 Hours with zero mess</span>
+        </div>
+        <div style="background:#f8fafc;padding:18px;border-radius:12px;border:1px solid #e2e8f0;">
+          <strong style="color:#0f3d24;display:block;font-size:15px;margin-bottom:6px;"><i class="fas fa-calculator" style="color:#10b981;margin-right:6px;"></i> Pricing Structure</strong>
+          <span style="color:#334155;font-size:14px;">100% Free Doorstep Inspection & Customized Upfront Quote</span>
+        </div>
+      </div>
+
+      <div style="background:#f0fdf4;border:1px solid #bbf7d0;border-radius:10px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;">
+        <div style="color:#166534;font-size:14px;font-weight:600;">
+          <i class="fas fa-check-circle" style="margin-right:6px;"></i> Free on-site inspection, exact measurement & transparent quote. No hidden charges.
+        </div>
+        <a href="tel:9912399224" style="background:#10b981;color:#fff;padding:8px 18px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px;">Book Free Inspection</a>
+      </div>
     </div>
-    
-
-    
-    
-
-    
-    
-
-    
-    
-
-    <div class="cta-strip">
+<div class="cta-strip">
       <p>📞 Get an exact quote — free site survey anywhere in India</p>
       <div class="cta-btns">
         <a href="tel:9912399224" class="c1">Call 9912399224</a>

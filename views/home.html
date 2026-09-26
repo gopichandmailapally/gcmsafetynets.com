@@ -58,6 +58,47 @@
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="/images/favicon.png">
+
+<style>
+  .hero-slider-section {
+    position: relative;
+    min-height: 580px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #0f172a;
+  }
+  .hero-bg-slides {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+  }
+  .hero-bg-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, transform 8s ease-out;
+    transform: scale(1);
+  }
+  .hero-bg-slide.active {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  .hero-slider-section::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 61, 36, 0.92) 0%, rgba(10, 30, 20, 0.88) 50%, rgba(0, 0, 0, 0.85) 100%);
+    z-index: 2;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 3;
+  }
+</style>
+
 </head>
 <body>
 
