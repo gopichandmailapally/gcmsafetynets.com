@@ -1758,6 +1758,17 @@ p {
   border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
+
+.float-btn-mail {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.float-btn-mail:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(2, 132, 199, 0.4);
+}
+
 .float-btn-wa {
   background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
   border: 2px solid rgba(255, 255, 255, 0.3);

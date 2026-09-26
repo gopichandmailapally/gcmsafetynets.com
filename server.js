@@ -40,28 +40,26 @@ const loadView = (viewName) => {
   return fs.existsSync(p) ? fs.readFileSync(p, 'utf-8') : null;
 };
 
-const homeHtml = loadView('home.html');
-const contactHtml = loadView('contact.html');
-const blogHtml = loadView('blog.html');
-const cityTemplate = loadView('city-template.html');
-
 // Routes
 app.get('/', (req, res) => {
+  const homeHtml = loadView('home.html');
   res.send(homeHtml || '<h1>GCM Safety Nets India</h1>');
 });
 
 app.get('/contact', (req, res) => {
+  const contactHtml = loadView('contact.html');
   res.send(contactHtml || '<h1>Contact GCM Safety Nets</h1>');
 });
 
 app.get('/blog', (req, res) => {
+  const blogHtml = loadView('blog.html');
   res.send(blogHtml || '<h1>Safety Nets Blog</h1>');
 });
 
 // Services routes
 app.get('/services/:slug', (req, res) => {
   const slug = req.params.slug;
-  const sHtml = loadView(`service-${slug}.html`);
+  const sHtml = loadView();
   if (sHtml) {
     return res.send(sHtml);
   }
@@ -73,11 +71,14 @@ app.get('/:service/:city', (req, res) => {
   const serviceSlug = req.params.service;
   const citySlug = req.params.city;
 
-  const cityName = citySlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-  const serviceName = serviceSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const cityName = citySlug.replace(/-/g, ' ').replace(/\w/g, c => c.toUpperCase());
+  const serviceName = serviceSlug.replace(/-/g, ' ').replace(/\w/g, c => c.toUpperCase());
+  const cityTemplate = loadView('city-template.html');
 
   if (cityTemplate) {
     let rendered = cityTemplate;
+
+    // Replace city and service names
     rendered = rendered.replace(/Hyderabad/g, cityName);
     rendered = rendered.replace(/hyderabad/g, citySlug);
     rendered = rendered.replace(/Anti Bird Net/g, serviceName);
@@ -85,32 +86,41 @@ app.get('/:service/:city', (req, res) => {
     rendered = rendered.replace(/Garware/g, 'Russea™');
     rendered = rendered.replace(/garware/g, 'russea');
 
-  const serviceImgMap = {
-    'pigeon': '/images/services/bird-pigeon-nets.jpg?v=1790395331',
-    'bird': '/images/services/bird-pigeon-nets.jpg?v=1790395331',
-    'balcony': '/images/services/balcony-safety-nets.jpg?v=1790395331',
-    'child': '/images/services/children-pet-safety-nets.jpg?v=1790395331',
-    'pet': '/images/services/children-pet-safety-nets.jpg?v=1790395331',
-    'construction': '/images/services/construction-safety-nets.jpg?v=1790395331',
-    'sports': '/images/services/sports-nets-turf.jpg?v=1790395331',
-    'cricket': '/images/services/sports-nets-turf.jpg?v=1790395331',
-    'hdpe': '/images/services/hdpe-nets.jpg?v=1790395331',
-    'grill': '/images/services/invisible-grills.jpg?v=1790395331',
-    'hanger': '/images/services/cloth-hangers.jpg?v=1790395331'
-  };
-  let matchedImg = '/images/services/balcony-safety-nets.jpg?v=1790395331';
-  for (const [k, v] of Object.entries(serviceImgMap)) {
-    if (serviceSlug.includes(k)) {
-      matchedImg = v;
-      break;
+    // Dynamic WhatsApp custom message tailored precisely to service and area without mismatch
+    const customWaMsg = ;
+    const customWaUrl = ;
+
+    rendered = rendered.replace(/https:\/\/wa\.me\/919912399224\?text=[^"'\s>]+/g, customWaUrl);
+    rendered = rendered.replace(/https:\/\/wa\.me\/919912399224(?=["'\s>])/g, customWaUrl);
+
+    // Dynamic Service Image matching
+    const serviceImgMap = {
+      'pigeon': '/images/services/bird-pigeon-nets.jpg?v=1790396500',
+      'bird': '/images/services/bird-pigeon-nets.jpg?v=1790396500',
+      'balcony': '/images/services/balcony-safety-nets.jpg?v=1790396500',
+      'child': '/images/services/children-pet-safety-nets.jpg?v=1790396500',
+      'pet': '/images/services/children-pet-safety-nets.jpg?v=1790396500',
+      'construction': '/images/services/construction-safety-nets.jpg?v=1790396500',
+      'sports': '/images/services/sports-nets-turf.jpg?v=1790396500',
+      'cricket': '/images/services/sports-nets-turf.jpg?v=1790396500',
+      'hdpe': '/images/services/hdpe-nets.jpg?v=1790396500',
+      'grill': '/images/services/invisible-grills.jpg?v=1790396500',
+      'hanger': '/images/services/cloth-hangers.jpg?v=1790396500'
+    };
+    let matchedImg = '/images/services/balcony-safety-nets.jpg?v=1790396500';
+    for (const [k, v] of Object.entries(serviceImgMap)) {
+      if (serviceSlug.includes(k)) {
+        matchedImg = v;
+        break;
+      }
     }
-  }
-  rendered = rendered.replace('/images/services/bird-pigeon-nets.jpg?v=1790395331', matchedImg);
+    rendered = rendered.replace('/images/services/bird-pigeon-nets.jpg?v=1790396500', matchedImg);
 
     return res.send(rendered);
   }
 
-  res.send(homeHtml);
+  const homeHtml = loadView('home.html');
+  res.send(homeHtml || '<h1>GCM Safety Nets</h1>');
 });
 
 // Contact form API
@@ -125,9 +135,10 @@ app.all('/indexnow*', (req, res) => res.json({ status: 'ok' }));
 
 // Zero-404 Fallback
 app.use((req, res) => {
-  res.status(200).send(homeHtml);
+  const homeHtml = loadView('home.html');
+  res.status(200).send(homeHtml || '<h1>GCM Safety Nets</h1>');
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log(`GCM Safety Nets (gcmsafetynets.com) running on port ${PORT}`);
+  console.log();
 });
