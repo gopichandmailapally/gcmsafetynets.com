@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /contact/submit
+Disallow: /track
+Disallow: /track-exit
+Disallow: /indexnow
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+Sitemap: https://www.gcmsafetynets.com/sitemap.xml
