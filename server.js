@@ -21,8 +21,8 @@ app.use(express.urlencoded({ extended: true }));
 // Serve static assets with aggressive caching
 app.use(express.static(path.join(__dirname, 'public'), {
   maxAge: '30d',
-  setHeaders: (res, path) => {
-    if (path.endsWith('.html') || path.endsWith('.xml') || path.endsWith('.txt')) {
+  setHeaders: (res, filePath) => {
+    if (filePath.endsWith('.html') || filePath.endsWith('.xml') || filePath.endsWith('.txt')) {
       res.setHeader('Cache-Control', 'public, max-age=3600, s-maxage=86400');
     }
   }
@@ -56,23 +56,28 @@ app.get('/blog', (req, res) => {
   res.send(blogHtml || '<h1>Safety Nets Blog</h1>');
 });
 
-// Services routes
+// Services routes (e.g. /services/balcony-safety-nets)
 app.get('/services/:slug', (req, res) => {
   const slug = req.params.slug;
-  const sHtml = loadView();
+  const sHtml = loadView('service-' + slug + '.html');
   if (sHtml) {
-    return res.send(sHtml);
+    const serviceName = slug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    const customWaMsg = 'Hi GCM Safety Nets, I am looking for ' + serviceName + ' installation. Please share details and schedule a free site survey.';
+    const customWaUrl = 'https://wa.me/919912399224?text=' + encodeURIComponent(customWaMsg);
+    let rendered = sHtml.replace(/https:\/\/wa\.me\/919912399224\?text=[^"\'\s>]+/g, customWaUrl);
+    rendered = rendered.replace(/https:\/\/wa\.me\/919912399224(?=["\'\s>])/g, customWaUrl);
+    return res.send(rendered);
   }
   return res.redirect('/');
 });
 
-// Programmatic Dynamic City/Service Routes (e.g. /anti-bird-net/hyderabad, /balcony-safety-nets/mumbai)
+// Programmatic Dynamic City/Service Routes (e.g. /anti-bird-net/indore, /balcony-safety-nets/mumbai)
 app.get('/:service/:city', (req, res) => {
   const serviceSlug = req.params.service;
   const citySlug = req.params.city;
 
-  const cityName = citySlug.replace(/-/g, ' ').replace(/\w/g, c => c.toUpperCase());
-  const serviceName = serviceSlug.replace(/-/g, ' ').replace(/\w/g, c => c.toUpperCase());
+  const cityName = citySlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  const serviceName = serviceSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   const cityTemplate = loadView('city-template.html');
 
   if (cityTemplate) {
@@ -87,11 +92,11 @@ app.get('/:service/:city', (req, res) => {
     rendered = rendered.replace(/garware/g, 'russea');
 
     // Dynamic WhatsApp custom message tailored precisely to service and area without mismatch
-    const customWaMsg = ;
-    const customWaUrl = ;
+    const customWaMsg = 'Hi GCM Safety Nets, I am looking for ' + serviceName + ' installation in ' + cityName + '. Please share details and schedule a free site survey.';
+    const customWaUrl = 'https://wa.me/919912399224?text=' + encodeURIComponent(customWaMsg);
 
-    rendered = rendered.replace(/https:\/\/wa\.me\/919912399224\?text=[^"'\s>]+/g, customWaUrl);
-    rendered = rendered.replace(/https:\/\/wa\.me\/919912399224(?=["'\s>])/g, customWaUrl);
+    rendered = rendered.replace(/https:\/\/wa\.me\/919912399224\?text=[^"\'\s>]+/g, customWaUrl);
+    rendered = rendered.replace(/https:\/\/wa\.me\/919912399224(?=["\'\s>])/g, customWaUrl);
 
     // Dynamic Service Image matching
     const serviceImgMap = {
@@ -114,7 +119,7 @@ app.get('/:service/:city', (req, res) => {
         break;
       }
     }
-    rendered = rendered.replace('/images/services/bird-pigeon-nets.jpg?v=1790396500', matchedImg);
+    rendered = rendered.replace(/\/images\/services\/bird-pigeon-nets\.jpg\?v=1790396500/g, matchedImg);
 
     return res.send(rendered);
   }
@@ -140,5 +145,5 @@ app.use((req, res) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-  console.log();
+  console.log('GCM Safety Nets server running on port ' + PORT);
 });
