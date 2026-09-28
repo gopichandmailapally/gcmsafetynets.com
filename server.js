@@ -180,7 +180,7 @@ app.use(express.static(path.join(__dirname, 'public'), {
   maxAge: '30d',
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.html') || filePath.endsWith('.xml') || filePath.endsWith('.txt')) {
-      res.setHeader('Cache-Control', 'public, max-age=3600, s-maxage=86400');
+      res.setHeader('Cache-Control', 'no-cache, must-revalidate');
     }
   }
 }));
@@ -204,7 +204,7 @@ const loadView = (viewName) => {
 // Master Sitemap Index: /sitemap.xml
 app.get('/sitemap.xml', (req, res) => {
   res.setHeader('Content-Type', 'application/xml; charset=utf-8');
-  res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=604800');
+  res.setHeader('Cache-Control', 'no-cache, must-revalidate');
 
   const today = new Date().toISOString().split('T')[0];
   const totalChunks = 60; // 60 sitemaps * 50,000 URLs = 3,000,000 URLs
@@ -272,7 +272,7 @@ app.get('/sitemap-:id.xml', (req, res) => {
   }
 
   res.setHeader('Content-Type', 'application/xml; charset=utf-8');
-  res.setHeader('Cache-Control', 'public, max-age=86400, s-maxage=604800');
+  res.setHeader('Cache-Control', 'no-cache, must-revalidate');
 
   const today = new Date().toISOString().split('T')[0];
   const chunkSize = 50000;

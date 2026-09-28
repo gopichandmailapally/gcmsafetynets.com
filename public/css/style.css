@@ -1302,92 +1302,93 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ===== HIGH-TECH FAQ ACCORDION ===== */
+/* ===== FAQ ACCORDION (ROCK-SOLID FULL-WIDTH COMPONENT) ===== */
 .faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-  max-width: 860px;
-  margin: 0 auto;
-}
-
-.faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  width: 100%;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+  width: 100% !important;
+  margin: 20px 0 35px 0 !important;
 }
 
 .faq-item {
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  width: 100%;
+  background: #ffffff !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  width: 100% !important;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.03) !important;
 }
 
 .faq-item:hover {
-  border-color: rgba(5, 150, 105, 0.4);
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.05);
+  border-color: rgba(5, 150, 105, 0.4) !important;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06) !important;
 }
 
 .faq-item.open {
-  border-color: var(--primary);
-  box-shadow: 0 6px 20px rgba(5, 150, 105, 0.12);
+  border-color: var(--primary) !important;
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.12) !important;
 }
 
-.faq-q {
-  padding: 16px 20px;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #0f172a;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  user-select: none;
-  background: transparent;
-  border: none;
-  width: 100%;
-  text-align: left;
-  font-family: var(--font-body);
-  line-height: 1.4;
-  transition: color 0.2s ease;
+button.faq-q, .faq-q {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  background: #ffffff !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  padding: 18px 22px !important;
+  font-family: var(--font-heading) !important;
+  font-size: 1.02rem !important;
+  font-weight: 700 !important;
+  color: #0f172a !important;
+  cursor: pointer !important;
+  text-align: left !important;
+  user-select: none !important;
+  line-height: 1.4 !important;
+  transition: all 0.2s ease !important;
 }
 
-.faq-q:hover {
-  color: var(--primary);
+button.faq-q:hover, .faq-q:hover {
+  color: var(--primary) !important;
 }
 
-.faq-q::after {
-  content: "+";
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 800;
-  color: var(--primary);
-  transition: transform 0.3s ease;
-  flex-shrink: 0;
-  margin-left: 12px;
+button.faq-q::after, .faq-q::after {
+  content: "+" !important;
+  font-family: var(--font-heading) !important;
+  font-size: 1.4rem !important;
+  font-weight: 800 !important;
+  color: var(--primary) !important;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  flex-shrink: 0 !important;
+  margin-left: 16px !important;
+  line-height: 1 !important;
 }
 
-.faq-item.open .faq-q::after {
-  content: "−";
-  transform: rotate(180deg);
+.faq-item.open button.faq-q::after, .faq-item.open .faq-q::after {
+  content: "−" !important;
+  transform: rotate(180deg) !important;
 }
 
 .faq-a {
-  padding: 0 20px 18px 20px;
-  color: #475569;
-  font-size: 0.92rem;
-  line-height: 1.65;
-  display: none;
-  border-top: 1px solid #f1f5f9;
-  padding-top: 12px;
+  padding: 0 22px 20px 22px !important;
+  color: #475569 !important;
+  font-size: 0.92rem !important;
+  line-height: 1.65 !important;
+  display: none !important;
+  border-top: 1px solid #f1f5f9 !important;
+  padding-top: 14px !important;
+  background: #ffffff !important;
 }
 
 .faq-item.open .faq-a {
-  display: block;
+  display: block !important;
 }
 
 /* ===== CITY PROGRAMMATIC TEMPLATE SPECIFIC STYLES ===== */
