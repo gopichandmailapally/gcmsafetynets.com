@@ -40,9 +40,19 @@ if (geoDb.locations && geoDb.locations.length > 0) {
 
 // Format Location string based on exact user specification
 function formatLocationDisplay(locationSlug) {
-  const loc = locationMap.get(locationSlug);
+  let cleanSlug = (locationSlug || '').toLowerCase();
+  let loc = locationMap.get(cleanSlug);
+  
   if (!loc) {
-    const raw = locationSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+    const stripped = cleanSlug.replace(/-(phase|road|sector|extension|colony|layout|apartments|gated-community|main-road|cross|junction|street|lane|marg|avenue)$/i, '');
+    if (locationMap.has(stripped)) {
+      loc = locationMap.get(stripped);
+    }
+  }
+
+  if (!loc) {
+    const cleanRaw = cleanSlug.replace(/-(phase|road|sector|extension|colony|layout|apartments|gated-community|main-road|cross|junction|street|lane|marg|avenue)$/i, '');
+    const raw = cleanRaw.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
     return {
       shortName: raw,
       fullName: raw,
@@ -56,19 +66,19 @@ function formatLocationDisplay(locationSlug) {
   let fullName = '';
 
   if (loc.parent_type === 'city_area') {
-    // City Area -> Area Name, City Name, State Name (e.g. Andheri West, Mumbai, Maharashtra)
-    fullName = `${loc.name}, ${loc.city}, ${loc.state}`;
+    // City Area -> Area Name, City Name, State Name (e.g. Madhapur, Hyderabad, Telangana)
+    fullName = loc.name + ', ' + loc.city + ', ' + loc.state;
   } else if (loc.parent_type === 'district_area') {
     // District Area -> Area Name, District Name, State Name (e.g. Sanand, Ahmedabad, Gujarat)
-    fullName = `${loc.name}, ${loc.district}, ${loc.state}`;
+    fullName = loc.name + ', ' + loc.district + ', ' + loc.state;
   } else if (loc.parent_type === 'city') {
-    // Major City -> City Name, State Name (e.g. Mumbai, Maharashtra)
-    fullName = `${loc.city}, ${loc.state}`;
+    // Major City -> City Name, State Name (e.g. Hyderabad, Telangana)
+    fullName = loc.city + ', ' + loc.state;
   } else if (loc.parent_type === 'district') {
     // District -> District Name, State Name (e.g. Solapur, Maharashtra)
-    fullName = `${loc.district}, ${loc.state}`;
+    fullName = loc.district + ', ' + loc.state;
   } else {
-    fullName = loc.state ? `${loc.name}, ${loc.state}` : loc.name;
+    fullName = loc.state ? (loc.name + ', ' + loc.state) : loc.name;
   }
 
   return {
@@ -79,7 +89,6 @@ function formatLocationDisplay(locationSlug) {
     district: loc.district || ''
   };
 }
-
 // Human-friendly Service Name & Image Resolver
 function resolveServiceDetails(serviceSlug) {
   const clean = (serviceSlug || '').toLowerCase();
@@ -372,62 +381,55 @@ app.get('/state/:state', (req, res) => {
 function renderProgrammaticPage(cityTemplate, serviceSlug, locationSlug) {
   const serviceInfo = resolveServiceDetails(serviceSlug);
   const locInfo = formatLocationDisplay(locationSlug);
-  const canonicalUrl = `https://www.gcmsafetynets.com/${serviceSlug}/${locationSlug}`;
+  const canonicalUrl = 'https://www.gcmsafetynets.com/' + serviceSlug + '/' + locationSlug;
   const customWaUrl = generateWhatsAppUrl(serviceSlug, locationSlug, canonicalUrl);
 
-  let rendered = cityTemplate;
+  const pageTitle = 'Best ' + serviceInfo.fullDisplayName + ' in ' + locInfo.fullName + ' | 5-Year Warranty | GCM Safety Nets';
+  const metaDesc = 'Certified Russea™ ' + serviceInfo.baseServiceName + ' in ' + locInfo.fullName + '. ISO 9001:2015 certified 100% virgin HDPE, 100+ kg load tested, 5-year replacement warranty, free on-site survey. Call 9912399224.';
 
-  // 1. WhatsApp Clean Injection
-  rendered = rendered.replace(/{{WHATSAPP_URL}}/g, customWaUrl);
-  rendered = rendered.replace(/https:\/\/wa\.me\/919912399224\?text=[^"'\s>]+/g, customWaUrl);
-  rendered = rendered.replace(/https:\/\/wa\.me\/919912399224(?=["'\s>])/g, customWaUrl);
+  let rendered = cityTemplate
+    .replaceAll('{{PAGE_TITLE}}', pageTitle)
+    .replaceAll('{{META_DESC}}', metaDesc)
+    .replaceAll('{{CANONICAL_URL}}', canonicalUrl)
+    .replaceAll('{{WHATSAPP_URL}}', customWaUrl)
+    .replaceAll('{{LOCATION_FULL}}', locInfo.fullName)
+    .replaceAll('{{LOCATION_SHORT}}', locInfo.shortName)
+    .replaceAll('{{LOCATION_SLUG}}', locationSlug)
+    .replaceAll('{{SERVICE_NAME}}', serviceInfo.fullDisplayName)
+    .replaceAll('{{SERVICE_BASE}}', serviceInfo.baseServiceName)
+    .replaceAll('{{SERVICE_SLUG}}', serviceSlug)
+    .replaceAll('{{SERVICE_IMG}}', serviceInfo.image)
+    .replaceAll('Garware', 'Russea™')
+    .replaceAll('garware', 'russea');
 
-  // 2. Titles & Meta Description
-  const pageTitle = `Best ${serviceInfo.fullDisplayName} in ${locInfo.fullName} | 5-Year Warranty | GCM Safety Nets`;
-  const metaDesc = `Certified Russea™ ${serviceInfo.baseServiceName} in ${locInfo.fullName}. ISO 9001:2015 certified 100% virgin HDPE, 100+ kg load tested, 5-year replacement warranty, free on-site survey. Call 9912399224.`;
+  // Fallback cleanup if any old hardcoded links exist
+  
+  
 
-  rendered = rendered.replace(/<title>[^<]*<\/title>/i, `<title>${pageTitle}</title>`);
-  rendered = rendered.replace(/<meta name="description" content="[^"]*">/i, `<meta name="description" content="${metaDesc}">`);
-  rendered = rendered.replace(/<link rel="canonical" href="[^"]*">/i, `<link rel="canonical" href="${canonicalUrl}">`);
-
-  // 3. OpenGraph & Twitter
-  rendered = rendered.replace(/<meta property="og:title" content="[^"]*">/i, `<meta property="og:title" content="${pageTitle}">`);
-  rendered = rendered.replace(/<meta property="og:description" content="[^"]*">/i, `<meta property="og:description" content="${metaDesc}">`);
-  rendered = rendered.replace(/<meta property="og:url" content="[^"]*">/i, `<meta property="og:url" content="${canonicalUrl}">`);
-  rendered = rendered.replace(/<meta name="twitter:title" content="[^"]*">/i, `<meta name="twitter:title" content="${pageTitle}">`);
-  rendered = rendered.replace(/<meta name="twitter:description" content="[^"]*">/i, `<meta name="twitter:description" content="${metaDesc}">`);
-
-  // 4. Dynamic Text Tokens & Brand Safety
-  rendered = rendered.replace(/Hyderabad, Telangana/g, locInfo.fullName);
-  rendered = rendered.replace(/Hyderabad/g, locInfo.shortName);
-  rendered = rendered.replace(/hyderabad/g, locationSlug);
-  rendered = rendered.replace(/Anti Bird Net/g, serviceInfo.fullDisplayName);
-  rendered = rendered.replace(/anti-bird-net/g, serviceSlug);
-  rendered = rendered.replace(/Garware/g, 'Russea™');
-  rendered = rendered.replace(/garware/g, 'russea');
-
-  // 5. Image Replacement
-  rendered = rendered.replace(/\/images\/services\/bird-pigeon-nets\.jpg\?v=1790396500/g, serviceInfo.image);
-
-  // 6. Dynamic Internal Linking Web (Injecting 12-14 nearby hubs from the same city/district/state)
+  // Dynamic Internal Linking Web (Injecting 12-14 nearby hubs from the same city/district/state)
   const clusterKey = (locInfo.city || locInfo.district || locInfo.state || 'India').toLowerCase();
   const cluster = districtClusters.get(clusterKey) || [];
   if (cluster.length > 0) {
     const nearbyLinks = cluster
       .filter(l => l.slug !== locationSlug)
       .slice(0, 14)
-      .map(l => `<a href="/${serviceSlug}/${l.slug}" class="city-chip" style="margin:4px;">${l.name}</a>`)
+      .map(l => '<a href="/' + serviceSlug + '/' + l.slug + '" class="city-chip" style="margin:4px;">' + l.name + '</a>')
       .join(' ');
     
-    rendered = rendered.replace(/<div class="sidebar-cities-grid"[^>]*>[\s\S]*?<\/div>/i, `<div class="sidebar-cities-grid" style="display:flex; flex-wrap:wrap; gap:8px;">${nearbyLinks}</div>`);
+    rendered = rendered.replace(/<div class="sidebar-cities-grid"[^>]*>[\s\S]*?<\/div>/i, '<div class="sidebar-cities-grid" style="display:flex; flex-wrap:wrap; gap:8px;">' + nearbyLinks + '</div>');
   }
 
   return rendered;
 }
-
 app.get('/:service/:location', (req, res) => {
   const serviceSlug = req.params.service;
   const locationSlug = req.params.location;
+
+  // Auto-clean any synthetic suffix and 301 redirect to clean canonical location
+  const cleanLocationSlug = locationSlug.replace(/-(phase|road|sector|extension|colony|layout|apartments|gated-community|main-road|cross|junction|street|lane|marg|avenue)$/i, '');
+  if (cleanLocationSlug !== locationSlug && (locationMap.has(cleanLocationSlug) || !locationMap.has(locationSlug))) {
+    return res.redirect(301, '/' + serviceSlug + '/' + cleanLocationSlug);
+  }
 
   const cityTemplate = loadView('city-template.html');
 
@@ -439,8 +441,6 @@ app.get('/:service/:location', (req, res) => {
   const homeHtml = loadView('home.html');
   res.send(homeHtml || '<h1>GCM Safety Nets</h1>');
 });
-
-// Contact API
 app.post('/contact/submit', (req, res) => {
   console.log('Lead received:', req.body);
   res.json({ success: true, message: 'Inquiry received. Our specialist will contact you in 15 minutes.' });
