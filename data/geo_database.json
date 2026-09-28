@@ -360,14 +360,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "ghodbunder-road",
-      "name": "Ghodbunder Road",
-      "parent_type": "city_area",
-      "city": "Thane",
-      "district": "Thane",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "majiwada",
       "name": "Majiwada",
       "parent_type": "city_area",
@@ -728,14 +720,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "sinhagad-road",
-      "name": "Sinhagad Road",
-      "parent_type": "city_area",
-      "city": "Pune",
-      "district": "Pune",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "dhankawadi",
       "name": "Dhankawadi",
       "parent_type": "city_area",
@@ -952,24 +936,8 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "college-road",
-      "name": "College Road",
-      "parent_type": "city_area",
-      "city": "Nashik",
-      "district": "Nashik",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "gangapur",
       "name": "Gangapur",
-      "parent_type": "city_area",
-      "city": "Nashik",
-      "district": "Nashik",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "gangapur-road",
-      "name": "Gangapur Road",
       "parent_type": "city_area",
       "city": "Nashik",
       "district": "Nashik",
@@ -1058,14 +1026,6 @@
     {
       "slug": "garkheda",
       "name": "Garkheda",
-      "parent_type": "city_area",
-      "city": "Aurangabad",
-      "district": "Aurangabad",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "beed-bypass",
-      "name": "Beed Bypass",
       "parent_type": "city_area",
       "city": "Aurangabad",
       "district": "Aurangabad",
@@ -1200,14 +1160,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "solapur-bypass",
-      "name": "Solapur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Solapur",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "amravati",
       "name": "Amravati",
       "parent_type": "district",
@@ -1258,14 +1210,6 @@
     {
       "slug": "amravati-industrial-zone",
       "name": "Amravati Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Amravati",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "amravati-bypass",
-      "name": "Amravati Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Amravati",
@@ -1328,14 +1272,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "nanded-bypass",
-      "name": "Nanded Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Nanded",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "akola",
       "name": "Akola",
       "parent_type": "district",
@@ -1386,14 +1322,6 @@
     {
       "slug": "akola-industrial-zone",
       "name": "Akola Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Akola",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "akola-bypass",
-      "name": "Akola Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Akola",
@@ -1456,14 +1384,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "jalgaon-bypass",
-      "name": "Jalgaon Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jalgaon",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "latur",
       "name": "Latur",
       "parent_type": "district",
@@ -1514,14 +1434,6 @@
     {
       "slug": "latur-industrial-zone",
       "name": "Latur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Latur",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "latur-bypass",
-      "name": "Latur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Latur",
@@ -1584,14 +1496,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "dhule-bypass",
-      "name": "Dhule Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Dhule",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "ahmednagar",
       "name": "Ahmednagar",
       "parent_type": "district",
@@ -1642,14 +1546,6 @@
     {
       "slug": "ahmednagar-industrial-zone",
       "name": "Ahmednagar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ahmednagar",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "ahmednagar-bypass",
-      "name": "Ahmednagar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Ahmednagar",
@@ -1712,14 +1608,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "chandrapur-bypass",
-      "name": "Chandrapur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chandrapur",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "parbhani",
       "name": "Parbhani",
       "parent_type": "district",
@@ -1770,14 +1658,6 @@
     {
       "slug": "parbhani-industrial-zone",
       "name": "Parbhani Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Parbhani",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "parbhani-bypass",
-      "name": "Parbhani Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Parbhani",
@@ -1840,14 +1720,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "jalna-bypass",
-      "name": "Jalna Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jalna",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "satara",
       "name": "Satara",
       "parent_type": "district",
@@ -1898,14 +1770,6 @@
     {
       "slug": "satara-industrial-zone",
       "name": "Satara Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Satara",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "satara-bypass",
-      "name": "Satara Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Satara",
@@ -1968,14 +1832,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "ratnagiri-bypass",
-      "name": "Ratnagiri Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ratnagiri",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "sangli",
       "name": "Sangli",
       "parent_type": "district",
@@ -2026,14 +1882,6 @@
     {
       "slug": "sangli-industrial-zone",
       "name": "Sangli Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Sangli",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "sangli-bypass",
-      "name": "Sangli Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Sangli",
@@ -2096,14 +1944,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "raigad-bypass",
-      "name": "Raigad Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Raigad",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "palghar",
       "name": "Palghar",
       "parent_type": "district",
@@ -2154,14 +1994,6 @@
     {
       "slug": "palghar-industrial-zone",
       "name": "Palghar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Palghar",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "palghar-bypass",
-      "name": "Palghar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Palghar",
@@ -2224,14 +2056,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "sindhudurg-bypass",
-      "name": "Sindhudurg Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Sindhudurg",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "bhandara",
       "name": "Bhandara",
       "parent_type": "district",
@@ -2282,14 +2106,6 @@
     {
       "slug": "bhandara-industrial-zone",
       "name": "Bhandara Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bhandara",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "bhandara-bypass",
-      "name": "Bhandara Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bhandara",
@@ -2352,14 +2168,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "gondia-bypass",
-      "name": "Gondia Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Gondia",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "gadchiroli",
       "name": "Gadchiroli",
       "parent_type": "district",
@@ -2410,14 +2218,6 @@
     {
       "slug": "gadchiroli-industrial-zone",
       "name": "Gadchiroli Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Gadchiroli",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "gadchiroli-bypass",
-      "name": "Gadchiroli Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Gadchiroli",
@@ -2480,14 +2280,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "wardha-bypass",
-      "name": "Wardha Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Wardha",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "yavatmal",
       "name": "Yavatmal",
       "parent_type": "district",
@@ -2538,14 +2330,6 @@
     {
       "slug": "yavatmal-industrial-zone",
       "name": "Yavatmal Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Yavatmal",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "yavatmal-bypass",
-      "name": "Yavatmal Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Yavatmal",
@@ -2608,14 +2392,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "washim-bypass",
-      "name": "Washim Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Washim",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "hingoli",
       "name": "Hingoli",
       "parent_type": "district",
@@ -2666,14 +2442,6 @@
     {
       "slug": "hingoli-industrial-zone",
       "name": "Hingoli Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Hingoli",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "hingoli-bypass",
-      "name": "Hingoli Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Hingoli",
@@ -2792,14 +2560,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "osmanabad-bypass",
-      "name": "Osmanabad Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Osmanabad",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "nandurbar",
       "name": "Nandurbar",
       "parent_type": "district",
@@ -2856,14 +2616,6 @@
       "state": "Maharashtra"
     },
     {
-      "slug": "nandurbar-bypass",
-      "name": "Nandurbar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Nandurbar",
-      "state": "Maharashtra"
-    },
-    {
       "slug": "buldhana",
       "name": "Buldhana",
       "parent_type": "district",
@@ -2914,14 +2666,6 @@
     {
       "slug": "buldhana-industrial-zone",
       "name": "Buldhana Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Buldhana",
-      "state": "Maharashtra"
-    },
-    {
-      "slug": "buldhana-bypass",
-      "name": "Buldhana Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Buldhana",
@@ -3808,14 +3552,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "hunter-road",
-      "name": "Hunter Road",
-      "parent_type": "city_area",
-      "city": "Warangal",
-      "district": "Warangal",
-      "state": "Telangana"
-    },
-    {
       "slug": "karimnagar",
       "name": "Karimnagar",
       "parent_type": "city",
@@ -3904,24 +3640,8 @@
       "state": "Telangana"
     },
     {
-      "slug": "bodhan-road",
-      "name": "Bodhan Road",
-      "parent_type": "city_area",
-      "city": "Nizamabad",
-      "district": "Nizamabad",
-      "state": "Telangana"
-    },
-    {
       "slug": "armoor",
       "name": "Armoor",
-      "parent_type": "city_area",
-      "city": "Nizamabad",
-      "district": "Nizamabad",
-      "state": "Telangana"
-    },
-    {
-      "slug": "armoor-road",
-      "name": "Armoor Road",
       "parent_type": "city_area",
       "city": "Nizamabad",
       "district": "Nizamabad",
@@ -3960,14 +3680,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "wyra-road",
-      "name": "Wyra Road",
-      "parent_type": "city_area",
-      "city": "Khammam",
-      "district": "Khammam",
-      "state": "Telangana"
-    },
-    {
       "slug": "rotary-nagar",
       "name": "Rotary Nagar",
       "parent_type": "city_area",
@@ -3978,14 +3690,6 @@
     {
       "slug": "mamatha-hospital",
       "name": "Mamatha Hospital",
-      "parent_type": "city_area",
-      "city": "Khammam",
-      "district": "Khammam",
-      "state": "Telangana"
-    },
-    {
-      "slug": "mamatha-hospital-road",
-      "name": "Mamatha Hospital Road",
       "parent_type": "city_area",
       "city": "Khammam",
       "district": "Khammam",
@@ -4064,14 +3768,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "ramagundam-bypass",
-      "name": "Ramagundam Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ramagundam",
-      "state": "Telangana"
-    },
-    {
       "slug": "nalgonda",
       "name": "Nalgonda",
       "parent_type": "district",
@@ -4122,14 +3818,6 @@
     {
       "slug": "nalgonda-industrial-zone",
       "name": "Nalgonda Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Nalgonda",
-      "state": "Telangana"
-    },
-    {
-      "slug": "nalgonda-bypass",
-      "name": "Nalgonda Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Nalgonda",
@@ -4192,14 +3880,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "mahbubnagar-bypass",
-      "name": "Mahbubnagar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Mahbubnagar",
-      "state": "Telangana"
-    },
-    {
       "slug": "siddipet",
       "name": "Siddipet",
       "parent_type": "district",
@@ -4250,14 +3930,6 @@
     {
       "slug": "siddipet-industrial-zone",
       "name": "Siddipet Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Siddipet",
-      "state": "Telangana"
-    },
-    {
-      "slug": "siddipet-bypass",
-      "name": "Siddipet Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Siddipet",
@@ -4320,14 +3992,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "suryapet-bypass",
-      "name": "Suryapet Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Suryapet",
-      "state": "Telangana"
-    },
-    {
       "slug": "mancherial",
       "name": "Mancherial",
       "parent_type": "district",
@@ -4378,14 +4042,6 @@
     {
       "slug": "mancherial-industrial-zone",
       "name": "Mancherial Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Mancherial",
-      "state": "Telangana"
-    },
-    {
-      "slug": "mancherial-bypass",
-      "name": "Mancherial Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Mancherial",
@@ -4448,14 +4104,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "jagtial-bypass",
-      "name": "Jagtial Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jagtial",
-      "state": "Telangana"
-    },
-    {
       "slug": "nirmal",
       "name": "Nirmal",
       "parent_type": "district",
@@ -4506,14 +4154,6 @@
     {
       "slug": "nirmal-industrial-zone",
       "name": "Nirmal Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Nirmal",
-      "state": "Telangana"
-    },
-    {
-      "slug": "nirmal-bypass",
-      "name": "Nirmal Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Nirmal",
@@ -4576,14 +4216,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "kothagudem-bypass",
-      "name": "Kothagudem Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kothagudem",
-      "state": "Telangana"
-    },
-    {
       "slug": "kamareddy",
       "name": "Kamareddy",
       "parent_type": "district",
@@ -4634,14 +4266,6 @@
     {
       "slug": "kamareddy-industrial-zone",
       "name": "Kamareddy Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kamareddy",
-      "state": "Telangana"
-    },
-    {
-      "slug": "kamareddy-bypass",
-      "name": "Kamareddy Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Kamareddy",
@@ -4704,14 +4328,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "medak-bypass",
-      "name": "Medak Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Medak",
-      "state": "Telangana"
-    },
-    {
       "slug": "vikarabad",
       "name": "Vikarabad",
       "parent_type": "district",
@@ -4762,14 +4378,6 @@
     {
       "slug": "vikarabad-industrial-zone",
       "name": "Vikarabad Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Vikarabad",
-      "state": "Telangana"
-    },
-    {
-      "slug": "vikarabad-bypass",
-      "name": "Vikarabad Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Vikarabad",
@@ -4832,14 +4440,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "yadadri-bhuvanagiri-bypass",
-      "name": "Yadadri Bhuvanagiri Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Yadadri Bhuvanagiri",
-      "state": "Telangana"
-    },
-    {
       "slug": "wanaparthy",
       "name": "Wanaparthy",
       "parent_type": "district",
@@ -4890,14 +4490,6 @@
     {
       "slug": "wanaparthy-industrial-zone",
       "name": "Wanaparthy Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Wanaparthy",
-      "state": "Telangana"
-    },
-    {
-      "slug": "wanaparthy-bypass",
-      "name": "Wanaparthy Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Wanaparthy",
@@ -4960,14 +4552,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "gadwal-bypass",
-      "name": "Gadwal Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Gadwal",
-      "state": "Telangana"
-    },
-    {
       "slug": "nagarkurnool",
       "name": "Nagarkurnool",
       "parent_type": "district",
@@ -5018,14 +4602,6 @@
     {
       "slug": "nagarkurnool-industrial-zone",
       "name": "Nagarkurnool Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Nagarkurnool",
-      "state": "Telangana"
-    },
-    {
-      "slug": "nagarkurnool-bypass",
-      "name": "Nagarkurnool Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Nagarkurnool",
@@ -5088,14 +4664,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "narayanpet-bypass",
-      "name": "Narayanpet Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Narayanpet",
-      "state": "Telangana"
-    },
-    {
       "slug": "jangaon",
       "name": "Jangaon",
       "parent_type": "district",
@@ -5146,14 +4714,6 @@
     {
       "slug": "jangaon-industrial-zone",
       "name": "Jangaon Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jangaon",
-      "state": "Telangana"
-    },
-    {
-      "slug": "jangaon-bypass",
-      "name": "Jangaon Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Jangaon",
@@ -5216,14 +4776,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "mahabubabad-bypass",
-      "name": "Mahabubabad Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Mahabubabad",
-      "state": "Telangana"
-    },
-    {
       "slug": "peddapalli",
       "name": "Peddapalli",
       "parent_type": "district",
@@ -5274,14 +4826,6 @@
     {
       "slug": "peddapalli-industrial-zone",
       "name": "Peddapalli Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Peddapalli",
-      "state": "Telangana"
-    },
-    {
-      "slug": "peddapalli-bypass",
-      "name": "Peddapalli Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Peddapalli",
@@ -5344,14 +4888,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "rajanna-sircilla-bypass",
-      "name": "Rajanna Sircilla Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Rajanna Sircilla",
-      "state": "Telangana"
-    },
-    {
       "slug": "asifabad",
       "name": "Asifabad",
       "parent_type": "district",
@@ -5408,14 +4944,6 @@
       "state": "Telangana"
     },
     {
-      "slug": "asifabad-bypass",
-      "name": "Asifabad Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Asifabad",
-      "state": "Telangana"
-    },
-    {
       "slug": "karnataka",
       "name": "Karnataka",
       "parent_type": "state",
@@ -5464,14 +4992,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "hsr-layout",
-      "name": "HSR Layout",
-      "parent_type": "city_area",
-      "city": "Bangalore",
-      "district": "Bangalore",
-      "state": "Karnataka"
-    },
-    {
       "slug": "electronic-city",
       "name": "Electronic City",
       "parent_type": "city_area",
@@ -5506,14 +5026,6 @@
     {
       "slug": "btm",
       "name": "BTM",
-      "parent_type": "city_area",
-      "city": "Bangalore",
-      "district": "Bangalore",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "btm-layout",
-      "name": "BTM Layout",
       "parent_type": "city_area",
       "city": "Bangalore",
       "district": "Bangalore",
@@ -5576,24 +5088,8 @@
       "state": "Karnataka"
     },
     {
-      "slug": "sarjapur-road",
-      "name": "Sarjapur Road",
-      "parent_type": "city_area",
-      "city": "Bangalore",
-      "district": "Bangalore",
-      "state": "Karnataka"
-    },
-    {
       "slug": "bannerghatta",
       "name": "Bannerghatta",
-      "parent_type": "city_area",
-      "city": "Bangalore",
-      "district": "Bangalore",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "bannerghatta-road",
-      "name": "Bannerghatta Road",
       "parent_type": "city_area",
       "city": "Bangalore",
       "district": "Bangalore",
@@ -5690,14 +5186,6 @@
     {
       "slug": "harlur",
       "name": "Harlur",
-      "parent_type": "city_area",
-      "city": "Bangalore",
-      "district": "Bangalore",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "harlur-road",
-      "name": "Harlur Road",
       "parent_type": "city_area",
       "city": "Bangalore",
       "district": "Bangalore",
@@ -5848,24 +5336,8 @@
       "state": "Karnataka"
     },
     {
-      "slug": "hennur-road",
-      "name": "Hennur Road",
-      "parent_type": "city_area",
-      "city": "Bangalore",
-      "district": "Bangalore",
-      "state": "Karnataka"
-    },
-    {
       "slug": "hbr",
       "name": "HBR",
-      "parent_type": "city_area",
-      "city": "Bangalore",
-      "district": "Bangalore",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "hbr-layout",
-      "name": "HBR Layout",
       "parent_type": "city_area",
       "city": "Bangalore",
       "district": "Bangalore",
@@ -6096,14 +5568,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "gokul-road",
-      "name": "Gokul Road",
-      "parent_type": "city_area",
-      "city": "Hubli",
-      "district": "Hubli",
-      "state": "Karnataka"
-    },
-    {
       "slug": "keshwapur",
       "name": "Keshwapur",
       "parent_type": "city_area",
@@ -6248,14 +5712,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "davanagere-bypass",
-      "name": "Davanagere Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Davanagere",
-      "state": "Karnataka"
-    },
-    {
       "slug": "bellary",
       "name": "Bellary",
       "parent_type": "district",
@@ -6306,14 +5762,6 @@
     {
       "slug": "bellary-industrial-zone",
       "name": "Bellary Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bellary",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "bellary-bypass",
-      "name": "Bellary Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bellary",
@@ -6376,14 +5824,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "shimoga-bypass",
-      "name": "Shimoga Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Shimoga",
-      "state": "Karnataka"
-    },
-    {
       "slug": "tumkur",
       "name": "Tumkur",
       "parent_type": "district",
@@ -6434,14 +5874,6 @@
     {
       "slug": "tumkur-industrial-zone",
       "name": "Tumkur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Tumkur",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "tumkur-bypass",
-      "name": "Tumkur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Tumkur",
@@ -6504,14 +5936,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "raichur-bypass",
-      "name": "Raichur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Raichur",
-      "state": "Karnataka"
-    },
-    {
       "slug": "bidar",
       "name": "Bidar",
       "parent_type": "district",
@@ -6562,14 +5986,6 @@
     {
       "slug": "bidar-industrial-zone",
       "name": "Bidar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bidar",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "bidar-bypass",
-      "name": "Bidar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bidar",
@@ -6632,14 +6048,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "hassan-bypass",
-      "name": "Hassan Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Hassan",
-      "state": "Karnataka"
-    },
-    {
       "slug": "kolar",
       "name": "Kolar",
       "parent_type": "district",
@@ -6690,14 +6098,6 @@
     {
       "slug": "kolar-industrial-zone",
       "name": "Kolar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kolar",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "kolar-bypass",
-      "name": "Kolar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Kolar",
@@ -6760,14 +6160,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "mandya-bypass",
-      "name": "Mandya Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Mandya",
-      "state": "Karnataka"
-    },
-    {
       "slug": "chikmagalur",
       "name": "Chikmagalur",
       "parent_type": "district",
@@ -6818,14 +6210,6 @@
     {
       "slug": "chikmagalur-industrial-zone",
       "name": "Chikmagalur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chikmagalur",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "chikmagalur-bypass",
-      "name": "Chikmagalur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Chikmagalur",
@@ -6888,14 +6272,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "chitradurga-bypass",
-      "name": "Chitradurga Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chitradurga",
-      "state": "Karnataka"
-    },
-    {
       "slug": "bagalkot",
       "name": "Bagalkot",
       "parent_type": "district",
@@ -6946,14 +6322,6 @@
     {
       "slug": "bagalkot-industrial-zone",
       "name": "Bagalkot Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bagalkot",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "bagalkot-bypass",
-      "name": "Bagalkot Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bagalkot",
@@ -7016,14 +6384,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "bijapur-bypass",
-      "name": "Bijapur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bijapur",
-      "state": "Karnataka"
-    },
-    {
       "slug": "chamarajanagar",
       "name": "Chamarajanagar",
       "parent_type": "district",
@@ -7074,14 +6434,6 @@
     {
       "slug": "chamarajanagar-industrial-zone",
       "name": "Chamarajanagar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chamarajanagar",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "chamarajanagar-bypass",
-      "name": "Chamarajanagar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Chamarajanagar",
@@ -7144,14 +6496,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "chikkaballapur-bypass",
-      "name": "Chikkaballapur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chikkaballapur",
-      "state": "Karnataka"
-    },
-    {
       "slug": "gadag",
       "name": "Gadag",
       "parent_type": "district",
@@ -7202,14 +6546,6 @@
     {
       "slug": "gadag-industrial-zone",
       "name": "Gadag Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Gadag",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "gadag-bypass",
-      "name": "Gadag Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Gadag",
@@ -7272,14 +6608,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "haveri-bypass",
-      "name": "Haveri Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Haveri",
-      "state": "Karnataka"
-    },
-    {
       "slug": "kodagu",
       "name": "Kodagu",
       "parent_type": "district",
@@ -7330,14 +6658,6 @@
     {
       "slug": "kodagu-industrial-zone",
       "name": "Kodagu Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kodagu",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "kodagu-bypass",
-      "name": "Kodagu Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Kodagu",
@@ -7400,14 +6720,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "koppal-bypass",
-      "name": "Koppal Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Koppal",
-      "state": "Karnataka"
-    },
-    {
       "slug": "ramanagara",
       "name": "Ramanagara",
       "parent_type": "district",
@@ -7458,14 +6770,6 @@
     {
       "slug": "ramanagara-industrial-zone",
       "name": "Ramanagara Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ramanagara",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "ramanagara-bypass",
-      "name": "Ramanagara Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Ramanagara",
@@ -7528,14 +6832,6 @@
       "state": "Karnataka"
     },
     {
-      "slug": "yadgir-bypass",
-      "name": "Yadgir Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Yadgir",
-      "state": "Karnataka"
-    },
-    {
       "slug": "udupi",
       "name": "Udupi",
       "parent_type": "district",
@@ -7586,14 +6882,6 @@
     {
       "slug": "udupi-industrial-zone",
       "name": "Udupi Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Udupi",
-      "state": "Karnataka"
-    },
-    {
-      "slug": "udupi-bypass",
-      "name": "Udupi Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Udupi",
@@ -7802,14 +7090,6 @@
     {
       "slug": "ecr-beach",
       "name": "ECR Beach",
-      "parent_type": "city_area",
-      "city": "Chennai",
-      "district": "Chennai",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "ecr-beach-road",
-      "name": "ECR Beach Road",
       "parent_type": "city_area",
       "city": "Chennai",
       "district": "Chennai",
@@ -8256,14 +7536,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "tirunelveli-bypass",
-      "name": "Tirunelveli Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Tirunelveli",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "tiruppur",
       "name": "Tiruppur",
       "parent_type": "district",
@@ -8314,14 +7586,6 @@
     {
       "slug": "tiruppur-industrial-zone",
       "name": "Tiruppur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Tiruppur",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "tiruppur-bypass",
-      "name": "Tiruppur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Tiruppur",
@@ -8384,14 +7648,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "vellore-bypass",
-      "name": "Vellore Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Vellore",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "erode",
       "name": "Erode",
       "parent_type": "district",
@@ -8442,14 +7698,6 @@
     {
       "slug": "erode-industrial-zone",
       "name": "Erode Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Erode",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "erode-bypass",
-      "name": "Erode Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Erode",
@@ -8512,14 +7760,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "kancheepuram-bypass",
-      "name": "Kancheepuram Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kancheepuram",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "chengalpattu",
       "name": "Chengalpattu",
       "parent_type": "district",
@@ -8570,14 +7810,6 @@
     {
       "slug": "chengalpattu-industrial-zone",
       "name": "Chengalpattu Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chengalpattu",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "chengalpattu-bypass",
-      "name": "Chengalpattu Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Chengalpattu",
@@ -8640,14 +7872,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "thiruvallur-bypass",
-      "name": "Thiruvallur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Thiruvallur",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "thanjavur",
       "name": "Thanjavur",
       "parent_type": "district",
@@ -8698,14 +7922,6 @@
     {
       "slug": "thanjavur-industrial-zone",
       "name": "Thanjavur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Thanjavur",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "thanjavur-bypass",
-      "name": "Thanjavur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Thanjavur",
@@ -8768,14 +7984,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "dindigul-bypass",
-      "name": "Dindigul Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Dindigul",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "ranipet",
       "name": "Ranipet",
       "parent_type": "district",
@@ -8826,14 +8034,6 @@
     {
       "slug": "ranipet-industrial-zone",
       "name": "Ranipet Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ranipet",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "ranipet-bypass",
-      "name": "Ranipet Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Ranipet",
@@ -8896,14 +8096,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "tenkasi-bypass",
-      "name": "Tenkasi Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Tenkasi",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "virudhunagar",
       "name": "Virudhunagar",
       "parent_type": "district",
@@ -8954,14 +8146,6 @@
     {
       "slug": "virudhunagar-industrial-zone",
       "name": "Virudhunagar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Virudhunagar",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "virudhunagar-bypass",
-      "name": "Virudhunagar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Virudhunagar",
@@ -9024,14 +8208,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "kanyakumari-bypass",
-      "name": "Kanyakumari Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kanyakumari",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "cuddalore",
       "name": "Cuddalore",
       "parent_type": "district",
@@ -9082,14 +8258,6 @@
     {
       "slug": "cuddalore-industrial-zone",
       "name": "Cuddalore Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Cuddalore",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "cuddalore-bypass",
-      "name": "Cuddalore Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Cuddalore",
@@ -9152,14 +8320,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "hosur-bypass",
-      "name": "Hosur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Hosur",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "pudukkottai",
       "name": "Pudukkottai",
       "parent_type": "district",
@@ -9210,14 +8370,6 @@
     {
       "slug": "pudukkottai-industrial-zone",
       "name": "Pudukkottai Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Pudukkottai",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "pudukkottai-bypass",
-      "name": "Pudukkottai Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Pudukkottai",
@@ -9280,14 +8432,6 @@
       "state": "Tamil Nadu"
     },
     {
-      "slug": "thoothukudi-bypass",
-      "name": "Thoothukudi Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Thoothukudi",
-      "state": "Tamil Nadu"
-    },
-    {
       "slug": "karur",
       "name": "Karur",
       "parent_type": "district",
@@ -9338,14 +8482,6 @@
     {
       "slug": "karur-industrial-zone",
       "name": "Karur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Karur",
-      "state": "Tamil Nadu"
-    },
-    {
-      "slug": "karur-bypass",
-      "name": "Karur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Karur",
@@ -9456,14 +8592,6 @@
       "state": "Delhi NCR"
     },
     {
-      "slug": "south-extension",
-      "name": "South Extension",
-      "parent_type": "city_area",
-      "city": "Delhi",
-      "district": "Delhi",
-      "state": "Delhi NCR"
-    },
-    {
       "slug": "janakpuri",
       "name": "Janakpuri",
       "parent_type": "city_area",
@@ -9562,14 +8690,6 @@
     {
       "slug": "preet-vihar",
       "name": "Preet Vihar",
-      "parent_type": "city_area",
-      "city": "Delhi",
-      "district": "Delhi",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "ip-extension",
-      "name": "IP Extension",
       "parent_type": "city_area",
       "city": "Delhi",
       "district": "Delhi",
@@ -9728,14 +8848,6 @@
       "state": "Delhi NCR"
     },
     {
-      "slug": "noida-extension",
-      "name": "Noida Extension",
-      "parent_type": "city_area",
-      "city": "Greater Noida",
-      "district": "Greater Noida",
-      "state": "Delhi NCR"
-    },
-    {
       "slug": "knowledge-park",
       "name": "Knowledge Park",
       "parent_type": "city_area",
@@ -9808,72 +8920,8 @@
       "state": "Delhi NCR"
     },
     {
-      "slug": "dlf-phase-1",
-      "name": "DLF Phase 1",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "dlf-phase-2",
-      "name": "DLF Phase 2",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "dlf-phase-3",
-      "name": "DLF Phase 3",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "dlf-phase-4",
-      "name": "DLF Phase 4",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "dlf-phase-5",
-      "name": "DLF Phase 5",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
       "slug": "golf-course",
       "name": "Golf Course",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "golf-course-road",
-      "name": "Golf Course Road",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "golf-course-extension",
-      "name": "Golf Course Extension",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "golf-course-extension-road",
-      "name": "Golf Course Extension Road",
       "parent_type": "city_area",
       "city": "Gurgaon",
       "district": "Gurgaon",
@@ -9890,14 +8938,6 @@
     {
       "slug": "sohna",
       "name": "Sohna",
-      "parent_type": "city_area",
-      "city": "Gurgaon",
-      "district": "Gurgaon",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "sohna-road",
-      "name": "Sohna Road",
       "parent_type": "city_area",
       "city": "Gurgaon",
       "district": "Gurgaon",
@@ -9986,14 +9026,6 @@
     {
       "slug": "raj-nagar",
       "name": "Raj Nagar",
-      "parent_type": "city_area",
-      "city": "Ghaziabad",
-      "district": "Ghaziabad",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "raj-nagar-extension",
-      "name": "Raj Nagar Extension",
       "parent_type": "city_area",
       "city": "Ghaziabad",
       "district": "Ghaziabad",
@@ -10144,14 +9176,6 @@
       "state": "Delhi NCR"
     },
     {
-      "slug": "central-delhi-bypass",
-      "name": "Central Delhi Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Central Delhi",
-      "state": "Delhi NCR"
-    },
-    {
       "slug": "new-delhi",
       "name": "New Delhi",
       "parent_type": "district",
@@ -10202,14 +9226,6 @@
     {
       "slug": "new-delhi-industrial-zone",
       "name": "New Delhi Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "New Delhi",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "new-delhi-bypass",
-      "name": "New Delhi Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "New Delhi",
@@ -10272,14 +9288,6 @@
       "state": "Delhi NCR"
     },
     {
-      "slug": "north-delhi-bypass",
-      "name": "North Delhi Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "North Delhi",
-      "state": "Delhi NCR"
-    },
-    {
       "slug": "south-delhi",
       "name": "South Delhi",
       "parent_type": "district",
@@ -10330,14 +9338,6 @@
     {
       "slug": "south-delhi-industrial-zone",
       "name": "South Delhi Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "South Delhi",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "south-delhi-bypass",
-      "name": "South Delhi Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "South Delhi",
@@ -10400,14 +9400,6 @@
       "state": "Delhi NCR"
     },
     {
-      "slug": "east-delhi-bypass",
-      "name": "East Delhi Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "East Delhi",
-      "state": "Delhi NCR"
-    },
-    {
       "slug": "west-delhi",
       "name": "West Delhi",
       "parent_type": "district",
@@ -10458,14 +9450,6 @@
     {
       "slug": "west-delhi-industrial-zone",
       "name": "West Delhi Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "West Delhi",
-      "state": "Delhi NCR"
-    },
-    {
-      "slug": "west-delhi-bypass",
-      "name": "West Delhi Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "West Delhi",
@@ -10592,14 +9576,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "sg-highway",
-      "name": "SG Highway",
-      "parent_type": "city_area",
-      "city": "Ahmedabad",
-      "district": "Ahmedabad",
-      "state": "Gujarat"
-    },
-    {
       "slug": "science-city",
       "name": "Science City",
       "parent_type": "city_area",
@@ -10610,14 +9586,6 @@
     {
       "slug": "sindhu-bhavan",
       "name": "Sindhu Bhavan",
-      "parent_type": "city_area",
-      "city": "Ahmedabad",
-      "district": "Ahmedabad",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "sindhu-bhavan-road",
-      "name": "Sindhu Bhavan Road",
       "parent_type": "city_area",
       "city": "Ahmedabad",
       "district": "Ahmedabad",
@@ -10744,14 +9712,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "ghod-dod-road",
-      "name": "Ghod Dod Road",
-      "parent_type": "city_area",
-      "city": "Surat",
-      "district": "Surat",
-      "state": "Gujarat"
-    },
-    {
       "slug": "rander",
       "name": "Rander",
       "parent_type": "city_area",
@@ -10762,14 +9722,6 @@
     {
       "slug": "dumas",
       "name": "Dumas",
-      "parent_type": "city_area",
-      "city": "Surat",
-      "district": "Surat",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "dumas-road",
-      "name": "Dumas Road",
       "parent_type": "city_area",
       "city": "Surat",
       "district": "Surat",
@@ -10848,14 +9800,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "op-road",
-      "name": "OP Road",
-      "parent_type": "city_area",
-      "city": "Vadodara",
-      "district": "Vadodara",
-      "state": "Gujarat"
-    },
-    {
       "slug": "sama-savli",
       "name": "Sama Savli",
       "parent_type": "city_area",
@@ -10880,14 +9824,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "kalawad-road",
-      "name": "Kalawad Road",
-      "parent_type": "city_area",
-      "city": "Rajkot",
-      "district": "Rajkot",
-      "state": "Gujarat"
-    },
-    {
       "slug": "university-road-rajkot",
       "name": "University Road Rajkot",
       "parent_type": "city_area",
@@ -10904,14 +9840,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "yagnik-road",
-      "name": "Yagnik Road",
-      "parent_type": "city_area",
-      "city": "Rajkot",
-      "district": "Rajkot",
-      "state": "Gujarat"
-    },
-    {
       "slug": "race-course-rajkot",
       "name": "Race Course Rajkot",
       "parent_type": "city_area",
@@ -10922,14 +9850,6 @@
     {
       "slug": "150-feet-ring",
       "name": "150 Feet Ring",
-      "parent_type": "city_area",
-      "city": "Rajkot",
-      "district": "Rajkot",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "150-feet-ring-road",
-      "name": "150 Feet Ring Road",
       "parent_type": "city_area",
       "city": "Rajkot",
       "district": "Rajkot",
@@ -11080,14 +10000,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "bhavnagar-bypass",
-      "name": "Bhavnagar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bhavnagar",
-      "state": "Gujarat"
-    },
-    {
       "slug": "jamnagar",
       "name": "Jamnagar",
       "parent_type": "district",
@@ -11138,14 +10050,6 @@
     {
       "slug": "jamnagar-industrial-zone",
       "name": "Jamnagar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jamnagar",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "jamnagar-bypass",
-      "name": "Jamnagar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Jamnagar",
@@ -11208,14 +10112,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "junagadh-bypass",
-      "name": "Junagadh Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Junagadh",
-      "state": "Gujarat"
-    },
-    {
       "slug": "anand",
       "name": "Anand",
       "parent_type": "district",
@@ -11266,14 +10162,6 @@
     {
       "slug": "anand-industrial-zone",
       "name": "Anand Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Anand",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "anand-bypass",
-      "name": "Anand Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Anand",
@@ -11336,14 +10224,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "navsari-bypass",
-      "name": "Navsari Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Navsari",
-      "state": "Gujarat"
-    },
-    {
       "slug": "morbi",
       "name": "Morbi",
       "parent_type": "district",
@@ -11394,14 +10274,6 @@
     {
       "slug": "morbi-industrial-zone",
       "name": "Morbi Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Morbi",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "morbi-bypass",
-      "name": "Morbi Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Morbi",
@@ -11464,14 +10336,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "bharuch-bypass",
-      "name": "Bharuch Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bharuch",
-      "state": "Gujarat"
-    },
-    {
       "slug": "valsad",
       "name": "Valsad",
       "parent_type": "district",
@@ -11522,14 +10386,6 @@
     {
       "slug": "valsad-industrial-zone",
       "name": "Valsad Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Valsad",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "valsad-bypass",
-      "name": "Valsad Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Valsad",
@@ -11592,14 +10448,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "vapi-bypass",
-      "name": "Vapi Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Vapi",
-      "state": "Gujarat"
-    },
-    {
       "slug": "mehsana",
       "name": "Mehsana",
       "parent_type": "district",
@@ -11650,14 +10498,6 @@
     {
       "slug": "mehsana-industrial-zone",
       "name": "Mehsana Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Mehsana",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "mehsana-bypass",
-      "name": "Mehsana Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Mehsana",
@@ -11720,14 +10560,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "patan-bypass",
-      "name": "Patan Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Patan",
-      "state": "Gujarat"
-    },
-    {
       "slug": "bhuj",
       "name": "Bhuj",
       "parent_type": "district",
@@ -11778,14 +10610,6 @@
     {
       "slug": "bhuj-industrial-zone",
       "name": "Bhuj Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bhuj",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "bhuj-bypass",
-      "name": "Bhuj Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bhuj",
@@ -11848,14 +10672,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "kutch-bypass",
-      "name": "Kutch Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kutch",
-      "state": "Gujarat"
-    },
-    {
       "slug": "surendranagar",
       "name": "Surendranagar",
       "parent_type": "district",
@@ -11906,14 +10722,6 @@
     {
       "slug": "surendranagar-industrial-zone",
       "name": "Surendranagar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Surendranagar",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "surendranagar-bypass",
-      "name": "Surendranagar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Surendranagar",
@@ -11976,14 +10784,6 @@
       "state": "Gujarat"
     },
     {
-      "slug": "porbandar-bypass",
-      "name": "Porbandar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Porbandar",
-      "state": "Gujarat"
-    },
-    {
       "slug": "dholera",
       "name": "Dholera",
       "parent_type": "district",
@@ -12034,14 +10834,6 @@
     {
       "slug": "dholera-industrial-zone",
       "name": "Dholera Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Dholera",
-      "state": "Gujarat"
-    },
-    {
-      "slug": "dholera-bypass",
-      "name": "Dholera Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Dholera",
@@ -12336,14 +11128,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "amaravati-road",
-      "name": "Amaravati Road",
-      "parent_type": "city_area",
-      "city": "Guntur",
-      "district": "Guntur",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "syamala-nagar",
       "name": "Syamala Nagar",
       "parent_type": "city_area",
@@ -12378,14 +11162,6 @@
     {
       "slug": "magunta",
       "name": "Magunta",
-      "parent_type": "city_area",
-      "city": "Nellore",
-      "district": "Nellore",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "magunta-layout",
-      "name": "Magunta Layout",
       "parent_type": "city_area",
       "city": "Nellore",
       "district": "Nellore",
@@ -12496,24 +11272,8 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "renigunta-road",
-      "name": "Renigunta Road",
-      "parent_type": "city_area",
-      "city": "Tirupati",
-      "district": "Tirupati",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "tiruchanur",
       "name": "Tiruchanur",
-      "parent_type": "city_area",
-      "city": "Tirupati",
-      "district": "Tirupati",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "tiruchanur-road",
-      "name": "Tiruchanur Road",
       "parent_type": "city_area",
       "city": "Tirupati",
       "district": "Tirupati",
@@ -12584,14 +11344,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "kakinada-bypass",
-      "name": "Kakinada Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kakinada",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "rajahmundry",
       "name": "Rajahmundry",
       "parent_type": "district",
@@ -12642,14 +11394,6 @@
     {
       "slug": "rajahmundry-industrial-zone",
       "name": "Rajahmundry Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Rajahmundry",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "rajahmundry-bypass",
-      "name": "Rajahmundry Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Rajahmundry",
@@ -12712,14 +11456,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "kurnool-bypass",
-      "name": "Kurnool Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kurnool",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "kadapa",
       "name": "Kadapa",
       "parent_type": "district",
@@ -12770,14 +11506,6 @@
     {
       "slug": "kadapa-industrial-zone",
       "name": "Kadapa Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kadapa",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "kadapa-bypass",
-      "name": "Kadapa Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Kadapa",
@@ -12840,14 +11568,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "anantapur-bypass",
-      "name": "Anantapur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Anantapur",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "vizianagaram",
       "name": "Vizianagaram",
       "parent_type": "district",
@@ -12898,14 +11618,6 @@
     {
       "slug": "vizianagaram-industrial-zone",
       "name": "Vizianagaram Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Vizianagaram",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "vizianagaram-bypass",
-      "name": "Vizianagaram Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Vizianagaram",
@@ -12968,14 +11680,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "eluru-bypass",
-      "name": "Eluru Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Eluru",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "ongole",
       "name": "Ongole",
       "parent_type": "district",
@@ -13026,14 +11730,6 @@
     {
       "slug": "ongole-industrial-zone",
       "name": "Ongole Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ongole",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "ongole-bypass",
-      "name": "Ongole Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Ongole",
@@ -13096,14 +11792,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "nandyal-bypass",
-      "name": "Nandyal Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Nandyal",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "machilipatnam",
       "name": "Machilipatnam",
       "parent_type": "district",
@@ -13154,14 +11842,6 @@
     {
       "slug": "machilipatnam-industrial-zone",
       "name": "Machilipatnam Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Machilipatnam",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "machilipatnam-bypass",
-      "name": "Machilipatnam Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Machilipatnam",
@@ -13224,14 +11904,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "tenali-bypass",
-      "name": "Tenali Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Tenali",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "proddatur",
       "name": "Proddatur",
       "parent_type": "district",
@@ -13282,14 +11954,6 @@
     {
       "slug": "proddatur-industrial-zone",
       "name": "Proddatur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Proddatur",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "proddatur-bypass",
-      "name": "Proddatur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Proddatur",
@@ -13352,14 +12016,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "chittoor-bypass",
-      "name": "Chittoor Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chittoor",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "hindupur",
       "name": "Hindupur",
       "parent_type": "district",
@@ -13410,14 +12066,6 @@
     {
       "slug": "hindupur-industrial-zone",
       "name": "Hindupur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Hindupur",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "hindupur-bypass",
-      "name": "Hindupur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Hindupur",
@@ -13480,14 +12128,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "bhimavaram-bypass",
-      "name": "Bhimavaram Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bhimavaram",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "madanapalle",
       "name": "Madanapalle",
       "parent_type": "district",
@@ -13544,14 +12184,6 @@
       "state": "Andhra Pradesh"
     },
     {
-      "slug": "madanapalle-bypass",
-      "name": "Madanapalle Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Madanapalle",
-      "state": "Andhra Pradesh"
-    },
-    {
       "slug": "srikakulam",
       "name": "Srikakulam",
       "parent_type": "district",
@@ -13602,14 +12234,6 @@
     {
       "slug": "srikakulam-industrial-zone",
       "name": "Srikakulam Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Srikakulam",
-      "state": "Andhra Pradesh"
-    },
-    {
-      "slug": "srikakulam-bypass",
-      "name": "Srikakulam Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Srikakulam",
@@ -13776,14 +12400,6 @@
       "state": "West Bengal"
     },
     {
-      "slug": "em-bypass",
-      "name": "EM Bypass",
-      "parent_type": "city_area",
-      "city": "Kolkata",
-      "district": "Kolkata",
-      "state": "West Bengal"
-    },
-    {
       "slug": "kasba",
       "name": "Kasba",
       "parent_type": "city_area",
@@ -13920,24 +12536,8 @@
       "state": "West Bengal"
     },
     {
-      "slug": "kona-expressway",
-      "name": "Kona Expressway",
-      "parent_type": "city_area",
-      "city": "Howrah",
-      "district": "Howrah",
-      "state": "West Bengal"
-    },
-    {
       "slug": "andul",
       "name": "Andul",
-      "parent_type": "city_area",
-      "city": "Howrah",
-      "district": "Howrah",
-      "state": "West Bengal"
-    },
-    {
-      "slug": "andul-road",
-      "name": "Andul Road",
       "parent_type": "city_area",
       "city": "Howrah",
       "district": "Howrah",
@@ -13994,14 +12594,6 @@
     {
       "slug": "sevoke",
       "name": "Sevoke",
-      "parent_type": "city_area",
-      "city": "Siliguri",
-      "district": "Siliguri",
-      "state": "West Bengal"
-    },
-    {
-      "slug": "sevoke-road",
-      "name": "Sevoke Road",
       "parent_type": "city_area",
       "city": "Siliguri",
       "district": "Siliguri",
@@ -14096,14 +12688,6 @@
       "state": "West Bengal"
     },
     {
-      "slug": "asansol-bypass",
-      "name": "Asansol Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Asansol",
-      "state": "West Bengal"
-    },
-    {
       "slug": "bardhaman",
       "name": "Bardhaman",
       "parent_type": "district",
@@ -14154,14 +12738,6 @@
     {
       "slug": "bardhaman-industrial-zone",
       "name": "Bardhaman Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bardhaman",
-      "state": "West Bengal"
-    },
-    {
-      "slug": "bardhaman-bypass",
-      "name": "Bardhaman Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bardhaman",
@@ -14224,14 +12800,6 @@
       "state": "West Bengal"
     },
     {
-      "slug": "malda-bypass",
-      "name": "Malda Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Malda",
-      "state": "West Bengal"
-    },
-    {
       "slug": "baharampur",
       "name": "Baharampur",
       "parent_type": "district",
@@ -14282,14 +12850,6 @@
     {
       "slug": "baharampur-industrial-zone",
       "name": "Baharampur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Baharampur",
-      "state": "West Bengal"
-    },
-    {
-      "slug": "baharampur-bypass",
-      "name": "Baharampur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Baharampur",
@@ -14352,14 +12912,6 @@
       "state": "West Bengal"
     },
     {
-      "slug": "kharagpur-bypass",
-      "name": "Kharagpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kharagpur",
-      "state": "West Bengal"
-    },
-    {
       "slug": "haldia",
       "name": "Haldia",
       "parent_type": "district",
@@ -14410,14 +12962,6 @@
     {
       "slug": "haldia-industrial-zone",
       "name": "Haldia Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Haldia",
-      "state": "West Bengal"
-    },
-    {
-      "slug": "haldia-bypass",
-      "name": "Haldia Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Haldia",
@@ -14480,14 +13024,6 @@
       "state": "West Bengal"
     },
     {
-      "slug": "darjeeling-bypass",
-      "name": "Darjeeling Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Darjeeling",
-      "state": "West Bengal"
-    },
-    {
       "slug": "jalpaiguri",
       "name": "Jalpaiguri",
       "parent_type": "district",
@@ -14544,14 +13080,6 @@
       "state": "West Bengal"
     },
     {
-      "slug": "jalpaiguri-bypass",
-      "name": "Jalpaiguri Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jalpaiguri",
-      "state": "West Bengal"
-    },
-    {
       "slug": "midnapore",
       "name": "Midnapore",
       "parent_type": "district",
@@ -14602,14 +13130,6 @@
     {
       "slug": "midnapore-industrial-zone",
       "name": "Midnapore Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Midnapore",
-      "state": "West Bengal"
-    },
-    {
-      "slug": "midnapore-bypass",
-      "name": "Midnapore Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Midnapore",
@@ -14832,14 +13352,6 @@
       "state": "Kerala"
     },
     {
-      "slug": "mavoor-road",
-      "name": "Mavoor Road",
-      "parent_type": "city_area",
-      "city": "Kozhikode",
-      "district": "Kozhikode",
-      "state": "Kerala"
-    },
-    {
       "slug": "palayam-kozhikode",
       "name": "Palayam Kozhikode",
       "parent_type": "city_area",
@@ -15032,14 +13544,6 @@
       "state": "Kerala"
     },
     {
-      "slug": "palakkad-bypass",
-      "name": "Palakkad Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Palakkad",
-      "state": "Kerala"
-    },
-    {
       "slug": "alappuzha",
       "name": "Alappuzha",
       "parent_type": "district",
@@ -15090,14 +13594,6 @@
     {
       "slug": "alappuzha-industrial-zone",
       "name": "Alappuzha Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Alappuzha",
-      "state": "Kerala"
-    },
-    {
-      "slug": "alappuzha-bypass",
-      "name": "Alappuzha Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Alappuzha",
@@ -15160,14 +13656,6 @@
       "state": "Kerala"
     },
     {
-      "slug": "malappuram-bypass",
-      "name": "Malappuram Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Malappuram",
-      "state": "Kerala"
-    },
-    {
       "slug": "kannur",
       "name": "Kannur",
       "parent_type": "district",
@@ -15218,14 +13706,6 @@
     {
       "slug": "kannur-industrial-zone",
       "name": "Kannur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kannur",
-      "state": "Kerala"
-    },
-    {
-      "slug": "kannur-bypass",
-      "name": "Kannur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Kannur",
@@ -15288,14 +13768,6 @@
       "state": "Kerala"
     },
     {
-      "slug": "kottayam-bypass",
-      "name": "Kottayam Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kottayam",
-      "state": "Kerala"
-    },
-    {
       "slug": "kasaragod",
       "name": "Kasaragod",
       "parent_type": "district",
@@ -15346,14 +13818,6 @@
     {
       "slug": "kasaragod-industrial-zone",
       "name": "Kasaragod Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kasaragod",
-      "state": "Kerala"
-    },
-    {
-      "slug": "kasaragod-bypass",
-      "name": "Kasaragod Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Kasaragod",
@@ -15416,14 +13880,6 @@
       "state": "Kerala"
     },
     {
-      "slug": "wayanad-bypass",
-      "name": "Wayanad Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Wayanad",
-      "state": "Kerala"
-    },
-    {
       "slug": "pathanamthitta",
       "name": "Pathanamthitta",
       "parent_type": "district",
@@ -15480,14 +13936,6 @@
       "state": "Kerala"
     },
     {
-      "slug": "pathanamthitta-bypass",
-      "name": "Pathanamthitta Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Pathanamthitta",
-      "state": "Kerala"
-    },
-    {
       "slug": "idukki",
       "name": "Idukki",
       "parent_type": "district",
@@ -15538,14 +13986,6 @@
     {
       "slug": "idukki-industrial-zone",
       "name": "Idukki Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Idukki",
-      "state": "Kerala"
-    },
-    {
-      "slug": "idukki-bypass",
-      "name": "Idukki Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Idukki",
@@ -15632,14 +14072,6 @@
       "state": "Rajasthan"
     },
     {
-      "slug": "tonk-road",
-      "name": "Tonk Road",
-      "parent_type": "city_area",
-      "city": "Jaipur",
-      "district": "Jaipur",
-      "state": "Rajasthan"
-    },
-    {
       "slug": "ajmer-road-jaipur",
       "name": "Ajmer Road Jaipur",
       "parent_type": "city_area",
@@ -15650,14 +14082,6 @@
     {
       "slug": "sirsi",
       "name": "Sirsi",
-      "parent_type": "city_area",
-      "city": "Jaipur",
-      "district": "Jaipur",
-      "state": "Rajasthan"
-    },
-    {
-      "slug": "sirsi-road",
-      "name": "Sirsi Road",
       "parent_type": "city_area",
       "city": "Jaipur",
       "district": "Jaipur",
@@ -15944,14 +14368,6 @@
       "state": "Rajasthan"
     },
     {
-      "slug": "bikaner-bypass",
-      "name": "Bikaner Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bikaner",
-      "state": "Rajasthan"
-    },
-    {
       "slug": "ajmer",
       "name": "Ajmer",
       "parent_type": "district",
@@ -16002,14 +14418,6 @@
     {
       "slug": "ajmer-industrial-zone",
       "name": "Ajmer Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ajmer",
-      "state": "Rajasthan"
-    },
-    {
-      "slug": "ajmer-bypass",
-      "name": "Ajmer Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Ajmer",
@@ -16072,14 +14480,6 @@
       "state": "Rajasthan"
     },
     {
-      "slug": "bhilwara-bypass",
-      "name": "Bhilwara Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bhilwara",
-      "state": "Rajasthan"
-    },
-    {
       "slug": "alwar",
       "name": "Alwar",
       "parent_type": "district",
@@ -16130,14 +14530,6 @@
     {
       "slug": "alwar-industrial-zone",
       "name": "Alwar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Alwar",
-      "state": "Rajasthan"
-    },
-    {
-      "slug": "alwar-bypass",
-      "name": "Alwar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Alwar",
@@ -16200,14 +14592,6 @@
       "state": "Rajasthan"
     },
     {
-      "slug": "bhiwadi-bypass",
-      "name": "Bhiwadi Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bhiwadi",
-      "state": "Rajasthan"
-    },
-    {
       "slug": "neemrana",
       "name": "Neemrana",
       "parent_type": "district",
@@ -16258,14 +14642,6 @@
     {
       "slug": "neemrana-industrial-zone",
       "name": "Neemrana Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Neemrana",
-      "state": "Rajasthan"
-    },
-    {
-      "slug": "neemrana-bypass",
-      "name": "Neemrana Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Neemrana",
@@ -16328,14 +14704,6 @@
       "state": "Rajasthan"
     },
     {
-      "slug": "bharatpur-bypass",
-      "name": "Bharatpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bharatpur",
-      "state": "Rajasthan"
-    },
-    {
       "slug": "sikar",
       "name": "Sikar",
       "parent_type": "district",
@@ -16386,14 +14754,6 @@
     {
       "slug": "sikar-industrial-zone",
       "name": "Sikar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Sikar",
-      "state": "Rajasthan"
-    },
-    {
-      "slug": "sikar-bypass",
-      "name": "Sikar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Sikar",
@@ -16456,14 +14816,6 @@
       "state": "Rajasthan"
     },
     {
-      "slug": "pali-bypass",
-      "name": "Pali Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Pali",
-      "state": "Rajasthan"
-    },
-    {
       "slug": "sri-ganganagar",
       "name": "Sri Ganganagar",
       "parent_type": "district",
@@ -16520,14 +14872,6 @@
       "state": "Rajasthan"
     },
     {
-      "slug": "sri-ganganagar-bypass",
-      "name": "Sri Ganganagar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Sri Ganganagar",
-      "state": "Rajasthan"
-    },
-    {
       "slug": "chittorgarh",
       "name": "Chittorgarh",
       "parent_type": "district",
@@ -16578,14 +14922,6 @@
     {
       "slug": "chittorgarh-industrial-zone",
       "name": "Chittorgarh Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chittorgarh",
-      "state": "Rajasthan"
-    },
-    {
-      "slug": "chittorgarh-bypass",
-      "name": "Chittorgarh Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Chittorgarh",
@@ -16672,14 +15008,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "annapurna-road",
-      "name": "Annapurna Road",
-      "parent_type": "city_area",
-      "city": "Indore",
-      "district": "Indore",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "rau",
       "name": "Rau",
       "parent_type": "city_area",
@@ -16714,22 +15042,6 @@
     {
       "slug": "kanadia",
       "name": "Kanadia",
-      "parent_type": "city_area",
-      "city": "Indore",
-      "district": "Indore",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "kanadia-road",
-      "name": "Kanadia Road",
-      "parent_type": "city_area",
-      "city": "Indore",
-      "district": "Indore",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "bypass-road-indore",
-      "name": "Bypass Road Indore",
       "parent_type": "city_area",
       "city": "Indore",
       "district": "Indore",
@@ -16826,14 +15138,6 @@
     {
       "slug": "bawadiya-kalan",
       "name": "Bawadiya Kalan",
-      "parent_type": "city_area",
-      "city": "Bhopal",
-      "district": "Bhopal",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "ayodhya-bypass",
-      "name": "Ayodhya Bypass",
       "parent_type": "city_area",
       "city": "Bhopal",
       "district": "Bhopal",
@@ -16992,14 +15296,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "ujjain-bypass",
-      "name": "Ujjain Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ujjain",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "sagar",
       "name": "Sagar",
       "parent_type": "district",
@@ -17050,14 +15346,6 @@
     {
       "slug": "sagar-industrial-zone",
       "name": "Sagar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Sagar",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "sagar-bypass",
-      "name": "Sagar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Sagar",
@@ -17120,14 +15408,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "dewas-bypass",
-      "name": "Dewas Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Dewas",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "satna",
       "name": "Satna",
       "parent_type": "district",
@@ -17178,14 +15458,6 @@
     {
       "slug": "satna-industrial-zone",
       "name": "Satna Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Satna",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "satna-bypass",
-      "name": "Satna Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Satna",
@@ -17248,14 +15520,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "ratlam-bypass",
-      "name": "Ratlam Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Ratlam",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "rewa",
       "name": "Rewa",
       "parent_type": "district",
@@ -17306,14 +15570,6 @@
     {
       "slug": "rewa-industrial-zone",
       "name": "Rewa Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Rewa",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "rewa-bypass",
-      "name": "Rewa Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Rewa",
@@ -17376,14 +15632,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "burhanpur-bypass",
-      "name": "Burhanpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Burhanpur",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "khandwa",
       "name": "Khandwa",
       "parent_type": "district",
@@ -17434,14 +15682,6 @@
     {
       "slug": "khandwa-industrial-zone",
       "name": "Khandwa Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Khandwa",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "khandwa-bypass",
-      "name": "Khandwa Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Khandwa",
@@ -17504,14 +15744,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "chhindwara-bypass",
-      "name": "Chhindwara Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Chhindwara",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "singrauli",
       "name": "Singrauli",
       "parent_type": "district",
@@ -17562,14 +15794,6 @@
     {
       "slug": "singrauli-industrial-zone",
       "name": "Singrauli Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Singrauli",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "singrauli-bypass",
-      "name": "Singrauli Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Singrauli",
@@ -17632,14 +15856,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "katni-bypass",
-      "name": "Katni Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Katni",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "guna",
       "name": "Guna",
       "parent_type": "district",
@@ -17690,14 +15906,6 @@
     {
       "slug": "guna-industrial-zone",
       "name": "Guna Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Guna",
-      "state": "Madhya Pradesh"
-    },
-    {
-      "slug": "guna-bypass",
-      "name": "Guna Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Guna",
@@ -17760,14 +15968,6 @@
       "state": "Madhya Pradesh"
     },
     {
-      "slug": "shivpuri-bypass",
-      "name": "Shivpuri Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Shivpuri",
-      "state": "Madhya Pradesh"
-    },
-    {
       "slug": "uttar-pradesh",
       "name": "Uttar Pradesh",
       "parent_type": "state",
@@ -17794,14 +15994,6 @@
     {
       "slug": "gomti-nagar",
       "name": "Gomti Nagar",
-      "parent_type": "city_area",
-      "city": "Lucknow",
-      "district": "Lucknow",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "gomti-nagar-extension",
-      "name": "Gomti Nagar Extension",
       "parent_type": "city_area",
       "city": "Lucknow",
       "district": "Lucknow",
@@ -18016,14 +16208,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "fatehabad-road",
-      "name": "Fatehabad Road",
-      "parent_type": "city_area",
-      "city": "Agra",
-      "district": "Agra",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "varanasi",
       "name": "Varanasi",
       "parent_type": "city",
@@ -18184,14 +16368,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "meerut-bypass",
-      "name": "Meerut Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Meerut",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "bareilly",
       "name": "Bareilly",
       "parent_type": "district",
@@ -18242,14 +16418,6 @@
     {
       "slug": "bareilly-industrial-zone",
       "name": "Bareilly Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bareilly",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "bareilly-bypass",
-      "name": "Bareilly Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bareilly",
@@ -18312,14 +16480,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "aligarh-bypass",
-      "name": "Aligarh Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Aligarh",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "moradabad",
       "name": "Moradabad",
       "parent_type": "district",
@@ -18370,14 +16530,6 @@
     {
       "slug": "moradabad-industrial-zone",
       "name": "Moradabad Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Moradabad",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "moradabad-bypass",
-      "name": "Moradabad Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Moradabad",
@@ -18440,14 +16592,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "saharanpur-bypass",
-      "name": "Saharanpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Saharanpur",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "gorakhpur",
       "name": "Gorakhpur",
       "parent_type": "district",
@@ -18498,14 +16642,6 @@
     {
       "slug": "gorakhpur-industrial-zone",
       "name": "Gorakhpur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Gorakhpur",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "gorakhpur-bypass",
-      "name": "Gorakhpur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Gorakhpur",
@@ -18568,14 +16704,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "firozabad-bypass",
-      "name": "Firozabad Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Firozabad",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "jhansi",
       "name": "Jhansi",
       "parent_type": "district",
@@ -18626,14 +16754,6 @@
     {
       "slug": "jhansi-industrial-zone",
       "name": "Jhansi Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jhansi",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "jhansi-bypass",
-      "name": "Jhansi Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Jhansi",
@@ -18696,14 +16816,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "muzaffarnagar-bypass",
-      "name": "Muzaffarnagar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Muzaffarnagar",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "mathura",
       "name": "Mathura",
       "parent_type": "district",
@@ -18754,14 +16866,6 @@
     {
       "slug": "mathura-industrial-zone",
       "name": "Mathura Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Mathura",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "mathura-bypass",
-      "name": "Mathura Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Mathura",
@@ -18880,14 +16984,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "budaun-bypass",
-      "name": "Budaun Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Budaun",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "rampur",
       "name": "Rampur",
       "parent_type": "district",
@@ -18938,14 +17034,6 @@
     {
       "slug": "rampur-industrial-zone",
       "name": "Rampur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Rampur",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "rampur-bypass",
-      "name": "Rampur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Rampur",
@@ -19008,14 +17096,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "shahjahanpur-bypass",
-      "name": "Shahjahanpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Shahjahanpur",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "hapur",
       "name": "Hapur",
       "parent_type": "district",
@@ -19066,14 +17146,6 @@
     {
       "slug": "hapur-industrial-zone",
       "name": "Hapur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Hapur",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "hapur-bypass",
-      "name": "Hapur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Hapur",
@@ -19136,14 +17208,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "etawah-bypass",
-      "name": "Etawah Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Etawah",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "mirzapur",
       "name": "Mirzapur",
       "parent_type": "district",
@@ -19200,14 +17264,6 @@
       "state": "Uttar Pradesh"
     },
     {
-      "slug": "mirzapur-bypass",
-      "name": "Mirzapur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Mirzapur",
-      "state": "Uttar Pradesh"
-    },
-    {
       "slug": "bulandshahr",
       "name": "Bulandshahr",
       "parent_type": "district",
@@ -19258,14 +17314,6 @@
     {
       "slug": "bulandshahr-industrial-zone",
       "name": "Bulandshahr Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bulandshahr",
-      "state": "Uttar Pradesh"
-    },
-    {
-      "slug": "bulandshahr-bypass",
-      "name": "Bulandshahr Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bulandshahr",
@@ -19378,30 +17426,6 @@
     {
       "slug": "sector-68-mohali",
       "name": "Sector 68 Mohali",
-      "parent_type": "city_area",
-      "city": "Mohali",
-      "district": "Mohali",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "phase-7-mohali",
-      "name": "Phase 7 Mohali",
-      "parent_type": "city_area",
-      "city": "Mohali",
-      "district": "Mohali",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "phase-3b2-mohali",
-      "name": "Phase 3B2 Mohali",
-      "parent_type": "city_area",
-      "city": "Mohali",
-      "district": "Mohali",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "phase-5-mohali",
-      "name": "Phase 5 Mohali",
       "parent_type": "city_area",
       "city": "Mohali",
       "district": "Mohali",
@@ -19552,14 +17576,6 @@
       "state": "Punjab & Chandigarh"
     },
     {
-      "slug": "pakhowal-road",
-      "name": "Pakhowal Road",
-      "parent_type": "city_area",
-      "city": "Ludhiana",
-      "district": "Ludhiana",
-      "state": "Punjab & Chandigarh"
-    },
-    {
       "slug": "amritsar",
       "name": "Amritsar",
       "parent_type": "city",
@@ -19602,14 +17618,6 @@
     {
       "slug": "majitha",
       "name": "Majitha",
-      "parent_type": "city_area",
-      "city": "Amritsar",
-      "district": "Amritsar",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "majitha-road",
-      "name": "Majitha Road",
       "parent_type": "city_area",
       "city": "Amritsar",
       "district": "Amritsar",
@@ -19720,14 +17728,6 @@
       "state": "Punjab & Chandigarh"
     },
     {
-      "slug": "patiala-bypass",
-      "name": "Patiala Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Patiala",
-      "state": "Punjab & Chandigarh"
-    },
-    {
       "slug": "bathinda",
       "name": "Bathinda",
       "parent_type": "district",
@@ -19778,14 +17778,6 @@
     {
       "slug": "bathinda-industrial-zone",
       "name": "Bathinda Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bathinda",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "bathinda-bypass",
-      "name": "Bathinda Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bathinda",
@@ -19848,14 +17840,6 @@
       "state": "Punjab & Chandigarh"
     },
     {
-      "slug": "hoshiarpur-bypass",
-      "name": "Hoshiarpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Hoshiarpur",
-      "state": "Punjab & Chandigarh"
-    },
-    {
       "slug": "pathankot",
       "name": "Pathankot",
       "parent_type": "district",
@@ -19906,14 +17890,6 @@
     {
       "slug": "pathankot-industrial-zone",
       "name": "Pathankot Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Pathankot",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "pathankot-bypass",
-      "name": "Pathankot Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Pathankot",
@@ -19976,14 +17952,6 @@
       "state": "Punjab & Chandigarh"
     },
     {
-      "slug": "moga-bypass",
-      "name": "Moga Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Moga",
-      "state": "Punjab & Chandigarh"
-    },
-    {
       "slug": "abohar",
       "name": "Abohar",
       "parent_type": "district",
@@ -20034,14 +18002,6 @@
     {
       "slug": "abohar-industrial-zone",
       "name": "Abohar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Abohar",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "abohar-bypass",
-      "name": "Abohar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Abohar",
@@ -20104,14 +18064,6 @@
       "state": "Punjab & Chandigarh"
     },
     {
-      "slug": "malerkotla-bypass",
-      "name": "Malerkotla Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Malerkotla",
-      "state": "Punjab & Chandigarh"
-    },
-    {
       "slug": "khanna",
       "name": "Khanna",
       "parent_type": "district",
@@ -20168,14 +18120,6 @@
       "state": "Punjab & Chandigarh"
     },
     {
-      "slug": "khanna-bypass",
-      "name": "Khanna Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Khanna",
-      "state": "Punjab & Chandigarh"
-    },
-    {
       "slug": "phagwara",
       "name": "Phagwara",
       "parent_type": "district",
@@ -20226,14 +18170,6 @@
     {
       "slug": "phagwara-industrial-zone",
       "name": "Phagwara Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Phagwara",
-      "state": "Punjab & Chandigarh"
-    },
-    {
-      "slug": "phagwara-bypass",
-      "name": "Phagwara Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Phagwara",
@@ -20336,14 +18272,6 @@
       "state": "Bihar & Jharkhand"
     },
     {
-      "slug": "khagaul-road",
-      "name": "Khagaul Road",
-      "parent_type": "city_area",
-      "city": "Patna",
-      "district": "Patna",
-      "state": "Bihar & Jharkhand"
-    },
-    {
       "slug": "gola-road-patna",
       "name": "Gola Road Patna",
       "parent_type": "city_area",
@@ -20362,14 +18290,6 @@
     {
       "slug": "fraser",
       "name": "Fraser",
-      "parent_type": "city_area",
-      "city": "Patna",
-      "district": "Patna",
-      "state": "Bihar & Jharkhand"
-    },
-    {
-      "slug": "fraser-road",
-      "name": "Fraser Road",
       "parent_type": "city_area",
       "city": "Patna",
       "district": "Patna",
@@ -20410,14 +18330,6 @@
     {
       "slug": "kanke",
       "name": "Kanke",
-      "parent_type": "city_area",
-      "city": "Ranchi",
-      "district": "Ranchi",
-      "state": "Bihar & Jharkhand"
-    },
-    {
-      "slug": "kanke-road",
-      "name": "Kanke Road",
       "parent_type": "city_area",
       "city": "Ranchi",
       "district": "Ranchi",
@@ -20656,14 +18568,6 @@
       "state": "Bihar & Jharkhand"
     },
     {
-      "slug": "gaya-bypass",
-      "name": "Gaya Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Gaya",
-      "state": "Bihar & Jharkhand"
-    },
-    {
       "slug": "bhagalpur",
       "name": "Bhagalpur",
       "parent_type": "district",
@@ -20714,14 +18618,6 @@
     {
       "slug": "bhagalpur-industrial-zone",
       "name": "Bhagalpur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bhagalpur",
-      "state": "Bihar & Jharkhand"
-    },
-    {
-      "slug": "bhagalpur-bypass",
-      "name": "Bhagalpur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bhagalpur",
@@ -20784,14 +18680,6 @@
       "state": "Bihar & Jharkhand"
     },
     {
-      "slug": "muzaffarpur-bypass",
-      "name": "Muzaffarpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Muzaffarpur",
-      "state": "Bihar & Jharkhand"
-    },
-    {
       "slug": "purnia",
       "name": "Purnia",
       "parent_type": "district",
@@ -20842,14 +18730,6 @@
     {
       "slug": "purnia-industrial-zone",
       "name": "Purnia Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Purnia",
-      "state": "Bihar & Jharkhand"
-    },
-    {
-      "slug": "purnia-bypass",
-      "name": "Purnia Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Purnia",
@@ -20912,14 +18792,6 @@
       "state": "Bihar & Jharkhand"
     },
     {
-      "slug": "darbhanga-bypass",
-      "name": "Darbhanga Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Darbhanga",
-      "state": "Bihar & Jharkhand"
-    },
-    {
       "slug": "bihar-sharif",
       "name": "Bihar Sharif",
       "parent_type": "district",
@@ -20970,14 +18842,6 @@
     {
       "slug": "bihar-sharif-industrial-zone",
       "name": "Bihar Sharif Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bihar Sharif",
-      "state": "Bihar & Jharkhand"
-    },
-    {
-      "slug": "bihar-sharif-bypass",
-      "name": "Bihar Sharif Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Bihar Sharif",
@@ -21040,14 +18904,6 @@
       "state": "Bihar & Jharkhand"
     },
     {
-      "slug": "arrah-bypass",
-      "name": "Arrah Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Arrah",
-      "state": "Bihar & Jharkhand"
-    },
-    {
       "slug": "begusarai",
       "name": "Begusarai",
       "parent_type": "district",
@@ -21098,14 +18954,6 @@
     {
       "slug": "begusarai-industrial-zone",
       "name": "Begusarai Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Begusarai",
-      "state": "Bihar & Jharkhand"
-    },
-    {
-      "slug": "begusarai-bypass",
-      "name": "Begusarai Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Begusarai",
@@ -21168,14 +19016,6 @@
       "state": "Bihar & Jharkhand"
     },
     {
-      "slug": "bokaro-bypass",
-      "name": "Bokaro Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Bokaro",
-      "state": "Bihar & Jharkhand"
-    },
-    {
       "slug": "deoghar",
       "name": "Deoghar",
       "parent_type": "district",
@@ -21232,14 +19072,6 @@
       "state": "Bihar & Jharkhand"
     },
     {
-      "slug": "deoghar-bypass",
-      "name": "Deoghar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Deoghar",
-      "state": "Bihar & Jharkhand"
-    },
-    {
       "slug": "hazaribagh",
       "name": "Hazaribagh",
       "parent_type": "district",
@@ -21290,14 +19122,6 @@
     {
       "slug": "hazaribagh-industrial-zone",
       "name": "Hazaribagh Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Hazaribagh",
-      "state": "Bihar & Jharkhand"
-    },
-    {
-      "slug": "hazaribagh-bypass",
-      "name": "Hazaribagh Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Hazaribagh",
@@ -21592,14 +19416,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "rourkela-bypass",
-      "name": "Rourkela Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Rourkela",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "berhampur",
       "name": "Berhampur",
       "parent_type": "district",
@@ -21650,14 +19466,6 @@
     {
       "slug": "berhampur-industrial-zone",
       "name": "Berhampur Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Berhampur",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "berhampur-bypass",
-      "name": "Berhampur Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Berhampur",
@@ -21720,14 +19528,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "sambalpur-bypass",
-      "name": "Sambalpur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Sambalpur",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "puri",
       "name": "Puri",
       "parent_type": "district",
@@ -21778,14 +19578,6 @@
     {
       "slug": "puri-industrial-zone",
       "name": "Puri Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Puri",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "puri-bypass",
-      "name": "Puri Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Puri",
@@ -21848,14 +19640,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "balasore-bypass",
-      "name": "Balasore Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Balasore",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "jharsuguda",
       "name": "Jharsuguda",
       "parent_type": "district",
@@ -21906,14 +19690,6 @@
     {
       "slug": "jharsuguda-industrial-zone",
       "name": "Jharsuguda Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jharsuguda",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "jharsuguda-bypass",
-      "name": "Jharsuguda Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Jharsuguda",
@@ -21976,14 +19752,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "kalinganagar-bypass",
-      "name": "Kalinganagar Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Kalinganagar",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "silchar",
       "name": "Silchar",
       "parent_type": "district",
@@ -22034,14 +19802,6 @@
     {
       "slug": "silchar-industrial-zone",
       "name": "Silchar Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Silchar",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "silchar-bypass",
-      "name": "Silchar Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Silchar",
@@ -22104,14 +19864,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "dibrugarh-bypass",
-      "name": "Dibrugarh Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Dibrugarh",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "jorhat",
       "name": "Jorhat",
       "parent_type": "district",
@@ -22162,14 +19914,6 @@
     {
       "slug": "jorhat-industrial-zone",
       "name": "Jorhat Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Jorhat",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "jorhat-bypass",
-      "name": "Jorhat Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Jorhat",
@@ -22232,14 +19976,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "shillong-bypass",
-      "name": "Shillong Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Shillong",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "agartala",
       "name": "Agartala",
       "parent_type": "district",
@@ -22290,14 +20026,6 @@
     {
       "slug": "agartala-industrial-zone",
       "name": "Agartala Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Agartala",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "agartala-bypass",
-      "name": "Agartala Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Agartala",
@@ -22360,14 +20088,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "aizawl-bypass",
-      "name": "Aizawl Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Aizawl",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "imphal",
       "name": "Imphal",
       "parent_type": "district",
@@ -22418,14 +20138,6 @@
     {
       "slug": "imphal-industrial-zone",
       "name": "Imphal Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Imphal",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "imphal-bypass",
-      "name": "Imphal Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Imphal",
@@ -22488,14 +20200,6 @@
       "state": "Odisha & North East"
     },
     {
-      "slug": "dimapur-bypass",
-      "name": "Dimapur Bypass",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Dimapur",
-      "state": "Odisha & North East"
-    },
-    {
       "slug": "gangtok",
       "name": "Gangtok",
       "parent_type": "district",
@@ -22546,14 +20250,6 @@
     {
       "slug": "gangtok-industrial-zone",
       "name": "Gangtok Industrial Zone",
-      "parent_type": "district_area",
-      "city": "",
-      "district": "Gangtok",
-      "state": "Odisha & North East"
-    },
-    {
-      "slug": "gangtok-bypass",
-      "name": "Gangtok Bypass",
       "parent_type": "district_area",
       "city": "",
       "district": "Gangtok",
