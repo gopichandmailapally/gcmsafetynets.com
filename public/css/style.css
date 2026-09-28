@@ -384,16 +384,21 @@ p {
   display: flex;
   overflow: hidden;
   user-select: none;
-  mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 4%, black 96%, transparent 100%);
 }
 
 .marquee-content {
   display: flex;
   gap: 36px;
-  animation: scrollMarquee 30s linear infinite;
+  animation: scrollMarquee 32s linear infinite;
   white-space: nowrap;
   flex-shrink: 0;
+  padding-right: 36px;
+}
+
+.marquee-bar:hover .marquee-content {
+  animation-play-state: paused;
 }
 
 .mq-item {
@@ -418,7 +423,9 @@ p {
 .mq-dot.cyan { background: var(--accent-cyan); box-shadow: 0 0 8px var(--accent-cyan); }
 
 @keyframes scrollMarquee {
-  from { transform: translateX(0); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
   to { transform: translateX(-50%); }
 }
 
