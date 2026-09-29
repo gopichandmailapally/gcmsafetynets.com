@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ===== MOBILE NAVIGATION DRAWER ===== */
+  /* ===== MOBILE MENU ===== */
   const menuBtn = document.querySelector('.mobile-menu-btn');
   const mobileMenu = document.getElementById('mobileMenu');
   const headerEl = document.querySelector('.header');
@@ -34,73 +34,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ===== ACCESSIBLE FAQ ACCORDION ===== */
-  const faqItems = document.querySelectorAll('.faq-item, .faq-card');
-  faqItems.forEach(function (item) {
-    const trigger = item.querySelector('.faq-header, .faq-q, button');
-    if (trigger) {
-      trigger.addEventListener('click', function () {
-        const isActive = item.classList.contains('active') || item.classList.contains('open');
-        faqItems.forEach(function (el) {
-          el.classList.remove('active', 'open');
-        });
-        if (!isActive) {
-          item.classList.add('active', 'open');
-        }
-      });
-    }
+  /* ===== FAQ ACCORDION ===== */
+  document.querySelectorAll('.faq-q').forEach(function (q) {
+    q.addEventListener('click', function () {
+      const item = q.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function (el) { el.classList.remove('open'); });
+      if (!isOpen) item.classList.add('open');
+    });
   });
 
-  /* ===== INTERACTIVE SQ.FT PRICING CALCULATOR ===== */
-  const rangeInput = document.getElementById('calcSqft') || document.getElementById('sqftRange');
-  const sqftDisplay = document.getElementById('calcSqftDisplay') || document.getElementById('sqftVal');
-  const serviceSelect = document.getElementById('calcService');
-  const totalDisplay = document.getElementById('calcTotalPrice') || document.getElementById('calcEstimate');
-  const rateDisplay = document.getElementById('calcRateDisplay');
-
-  const rateCard = {
-    'balcony-safety-nets': 18,
-    'bird-pigeon-nets': 18,
-    'invisible-grills': 140,
-    'sports-nets-turf': 22,
-    'children-pet-safety-nets': 22,
-    'construction-safety-nets': 14,
-    'hdpe-nets': 16,
-    'cloth-hangers': 1850 // per set
-  };
-
-  function updateCalculator() {
-    if (!rangeInput || !totalDisplay) return;
-    const sqft = parseInt(rangeInput.value, 10) || 200;
-    if (sqftDisplay) sqftDisplay.textContent = sqft + (serviceSelect && serviceSelect.value === 'cloth-hangers' ? ' Sets' : ' Sq.Ft');
-
-    const selectedSvc = serviceSelect ? serviceSelect.value : 'balcony-safety-nets';
-    const rate = rateCard[selectedSvc] || 18;
-
-    if (rateDisplay) {
-      rateDisplay.textContent = selectedSvc === 'cloth-hangers' ? '₹' + rate + ' / set' : '₹' + rate + ' / sq.ft';
-    }
-
-    const total = sqft * rate;
-    totalDisplay.textContent = '₹' + total.toLocaleString('en-IN');
-  }
-
-  if (rangeInput) {
-    rangeInput.addEventListener('input', updateCalculator);
-  }
-  if (serviceSelect) {
-    serviceSelect.addEventListener('change', updateCalculator);
-  }
-  updateCalculator();
-
-  /* ===== CONTACT FORM AJAX SUBMISSION ===== */
+  /* ===== CONTACT FORM AJAX ===== */
   function handleForm(formEl) {
     if (!formEl) return;
     formEl.addEventListener('submit', async function (e) {
       e.preventDefault();
       const btn = formEl.querySelector('button[type="submit"]');
       const originalText = btn.textContent;
-      btn.textContent = 'Submitting Request...';
+      btn.textContent = 'Sending...';
       btn.disabled = true;
 
       const data = Object.fromEntries(new FormData(formEl).entries());
@@ -119,15 +70,14 @@ document.addEventListener('DOMContentLoaded', function () {
             formEl.style.display = 'none';
             successEl.style.display = 'block';
           } else {
-            showToast('✅ ' + (json.message || 'Thank you! Our engineer will call you within 15 minutes.'), 'success');
+            showToast('✅ ' + json.message, 'success');
             formEl.reset();
           }
         } else {
-          showToast('❌ ' + (json.message || 'Please check your inputs and try again.'), 'error');
+          showToast('❌ ' + json.message, 'error');
         }
       } catch (err) {
-        showToast('❌ Submission received. Our team will contact you shortly.', 'success');
-        formEl.reset();
+        showToast('❌ Something went wrong. Please call 9912399224.', 'error');
       } finally {
         btn.textContent = originalText;
         btn.disabled = false;
@@ -139,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
   handleForm(document.getElementById('pageForm'));
   handleForm(document.getElementById('mainContactForm'));
 
-  /* ===== TOAST NOTIFICATIONS ===== */
+  /* ===== TOAST NOTIFICATION ===== */
   function showToast(message, type) {
     const existing = document.querySelector('.gcm-toast');
     if (existing) existing.remove();
@@ -148,82 +98,54 @@ document.addEventListener('DOMContentLoaded', function () {
     toast.className = 'gcm-toast';
     toast.textContent = message;
     toast.style.cssText = [
-      'position:fixed', 'top:84px', 'right:20px', 'z-index:9999',
-      'padding:14px 20px', 'border-radius:10px', 'font-size:14px',
-      'font-weight:700', 'max-width:380px', 'box-shadow:0 10px 30px rgba(7,23,45,0.15)',
+      'position:fixed', 'top:80px', 'right:20px', 'z-index:9999',
+      'padding:14px 20px', 'border-radius:8px', 'font-size:14px',
+      'font-weight:600', 'max-width:360px', 'box-shadow:0 4px 16px rgba(0,0,0,.15)',
       'animation:fadeInRight .3s ease',
       type === 'success'
-        ? 'background:#EBFBF1;color:#15803D;border:1px solid #BBF7D0'
-        : 'background:#FFF1F1;color:#DC2626;border:1px solid #FECACA',
+        ? 'background:#dcfce7;color:#15803d;border:1px solid #bbf7d0'
+        : 'background:#fee2e2;color:#dc2626;border:1px solid #fecaca',
     ].join(';');
+
+    const style = document.createElement('style');
+    style.textContent = '@keyframes fadeInRight{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}';
+    document.head.appendChild(style);
 
     document.body.appendChild(toast);
     setTimeout(function () { toast.remove(); }, 5000);
   }
 
-  /* ===== DYNAMIC CONTEXTUAL WHATSAPP ENGINE ===== */
-  (function adaptWhatsAppLinks() {
-    function getContextMessage() {
-      const title = document.title || '';
-      const path = window.location.pathname.toLowerCase().replace(/^\/+|\/+$/g, '');
-      let service = '';
-      let location = 'India (Pan-India Service)';
-
-      if (path.includes('box-cricket') || title.toLowerCase().includes('box cricket')) {
-        service = 'Box Cricket Ground Setup & Netting';
-      } else if (path.includes('invisible-grill') || title.toLowerCase().includes('invisible grill')) {
-        service = 'Stainless Steel Invisible Grills';
-      } else if (path.includes('cloth-hanger') || title.toLowerCase().includes('cloth hanger')) {
-        service = 'SS Ceiling Cloth Drying Hangers';
-      } else if (path.includes('bird') || path.includes('pigeon') || title.toLowerCase().includes('bird') || title.toLowerCase().includes('pigeon')) {
-        service = 'Anti-Bird & Pigeon Protection Nets';
-      } else if (path.includes('balcony') || title.toLowerCase().includes('balcony')) {
-        service = 'Balcony Safety Nets Installation';
-      } else if (path.includes('children') || path.includes('pet')) {
-        service = 'Children & Pet Safety Nets';
-      } else if (path.includes('sports') || path.includes('turf')) {
-        service = 'Sports Netting & Artificial Turf Setup';
-      } else if (path.includes('construction')) {
-        service = 'Construction & Industrial Safety Nets';
-      } else {
-        service = title.split(/[–—|-]/)[0].trim() || 'Safety Nets & Invisible Grills';
-      }
-
-      if (path) {
-        const parts = path.split('/');
-        if (parts.length >= 2 && parts[0] !== 'services' && parts[0] !== 'blog') {
-          location = parts[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  /* ===== LAZY LOAD IMAGES ===== */
+  if ('IntersectionObserver' in window) {
+    const imgObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          const img = entry.target;
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+            img.removeAttribute('data-src');
+          }
+          imgObserver.unobserve(img);
         }
-      }
+      });
+    }, { rootMargin: '200px' });
 
-      return `Hi GCM Safety Nets, I would like to inquire about *${service}* in *${location}*.\n\n` +
-             `• Service: ${service}\n` +
-             `• Location: ${location}\n` +
-             `• Page: ${window.location.href}\n\n` +
-             `Please share pricing per sq.ft / specifications and schedule a free site survey.`;
-    }
-
-    const smartMsg = getContextMessage();
-    const smartUrl = `https://wa.me/919912399224?text=${encodeURIComponent(smartMsg)}`;
-
-    const waSelectors = [
-      'a[href*="wa.me"]',
-      'a[href*="whatsapp.com"]',
-      '.top-bar-wa',
-      '.btn-whatsapp',
-      '.mobile-sticky-wa',
-      '.float-btn-wa'
-    ];
-
-    document.querySelectorAll(waSelectors.join(', ')).forEach(el => {
-      const current = el.getAttribute('href') || '';
-      if (!current.includes('text=') || current.includes('safety%20net%20services') || current === 'https://wa.me/919912399224') {
-        el.setAttribute('href', smartUrl);
-      }
+    document.querySelectorAll('img[data-src]').forEach(function (img) {
+      imgObserver.observe(img);
     });
-  })();
+  }
 
-  /* ===== SMOOTH SCROLL ===== */
+  /* ===== STICKY HEADER SHADOW ===== */
+  const header = document.querySelector('.header');
+  if (header) {
+    window.addEventListener('scroll', function () {
+      header.style.boxShadow = window.scrollY > 10
+        ? '0 2px 12px rgba(0,0,0,.12)'
+        : '0 1px 4px rgba(0,0,0,.08)';
+    }, { passive: true });
+  }
+
+  /* ===== SMOOTH SCROLL for anchor links ===== */
   document.querySelectorAll('a[href^="#"]').forEach(function (anchor) {
     anchor.addEventListener('click', function (e) {
       const target = document.querySelector(anchor.getAttribute('href'));
@@ -233,5 +155,64 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
   });
+
+  /* ===== PHONE NUMBER CLICK TRACKING ===== */
+  document.querySelectorAll('a[href^="tel:"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'phone_call', { event_category: 'contact', event_label: a.href });
+      }
+    });
+  });
+
+  /* ===== WHATSAPP CLICK TRACKING ===== */
+  document.querySelectorAll('a[href*="wa.me"]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'whatsapp_click', { event_category: 'contact', event_label: 'whatsapp' });
+      }
+    });
+  });
+
+
+  /* ===== DYNAMIC CONTEXTUAL WHATSAPP LINK ADAPTER ===== */
+  (function adaptWhatsAppLinks() {
+    const path = window.location.pathname.replace(/^\/+|\/+$/g, '');
+    let serviceName = '';
+    let cityName = '';
+
+    if (path) {
+      const parts = path.split('/');
+      if (parts.length === 2 && parts[0] !== 'services' && parts[0] !== 'blog') {
+        // e.g. /anti-bird-net/indore or /balcony-safety-nets/mumbai
+        serviceName = parts[0].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        cityName = parts[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      } else if (parts[0] === 'services' && parts[1]) {
+        serviceName = parts[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+      }
+    }
+
+    let customMsg = 'Hi GCM Safety Nets, I need a safety net quote. Please share details and schedule a free survey.';
+    if (serviceName && cityName) {
+      customMsg = `Hi GCM Safety Nets, I am looking for ${serviceName} installation in ${cityName}. Please share details and schedule a free site survey.`;
+    } else if (serviceName) {
+      customMsg = `Hi GCM Safety Nets, I am looking for ${serviceName} installation. Please share details and schedule a free site survey.`;
+    }
+
+    const waUrl = `https://wa.me/919912399224?text=${encodeURIComponent(customMsg)}`;
+
+    // Target the 3 main header and floating buttons
+    const keyWaSelectors = [
+      '.top-bar-wa',
+      '.header .btn-whatsapp',
+      '.float-btn-wa'
+    ];
+
+    keyWaSelectors.forEach(selector => {
+      document.querySelectorAll(selector).forEach(el => {
+        el.href = waUrl;
+      });
+    });
+  })();
 
 });

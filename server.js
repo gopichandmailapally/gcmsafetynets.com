@@ -111,6 +111,15 @@ function resolveServiceDetails(serviceSlug) {
   } else if (clean.includes('cloth-hangers') || clean.includes('hanger') || clean.includes('drying')) {
     baseServiceName = 'SS Ceiling Cloth Drying Hangers';
     matchedImg = '/images/services/cloth-hangers.jpg?v=1790396500';
+  } else if (clean.includes('spike')) {
+    baseServiceName = 'Bird & Pigeon Protection Spikes';
+    matchedImg = '/images/services/bird-pigeon-nets.jpg?v=1790396500';
+  } else if (clean.includes('coconut')) {
+    baseServiceName = 'Coconut Tree Safety Nets';
+    matchedImg = '/images/services/balcony-safety-nets.jpg?v=1790396500';
+  } else if (clean.includes('duct')) {
+    baseServiceName = 'Duct Area Safety Nets';
+    matchedImg = '/images/services/hdpe-nets.jpg?v=1790396500';
   } else if (clean.includes('bird') || clean.includes('pigeon')) {
     baseServiceName = 'Anti Bird & Pigeon Nets';
     matchedImg = '/images/services/bird-pigeon-nets.jpg?v=1790396500';
@@ -126,7 +135,7 @@ function resolveServiceDetails(serviceSlug) {
   } else if (clean.includes('cricket') || clean.includes('box-cricket') || clean.includes('football') || clean.includes('sports') || clean.includes('turf')) {
     baseServiceName = 'Sports Nets & Turf Arena';
     matchedImg = '/images/services/sports-nets-turf.jpg?v=1790396500';
-  } else if (clean.includes('hdpe') || clean.includes('industrial') || clean.includes('duct')) {
+  } else if (clean.includes('hdpe') || clean.includes('industrial')) {
     baseServiceName = 'Industrial HDPE Nets';
     matchedImg = '/images/services/hdpe-nets.jpg?v=1790396500';
   }
