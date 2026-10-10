@@ -38,55 +38,33 @@ if (geoDb.locations && geoDb.locations.length > 0) {
   }
 }
 
+// Load Master Geo Taxonomy Resolver
+require('./public/js/geo_resolver.js');
+
 // Format Location string based on exact user specification
 function formatLocationDisplay(locationSlug) {
   let cleanSlug = (locationSlug || '').toLowerCase();
-  let loc = locationMap.get(cleanSlug);
-  
-  if (!loc) {
-    const stripped = cleanSlug.replace(/-(phase|road|sector|extension|colony|layout|apartments|gated-community|main-road|cross|junction|street|lane|marg|avenue)$/i, '');
-    if (locationMap.has(stripped)) {
-      loc = locationMap.get(stripped);
-    }
-  }
+  const fullName = typeof resolveSmartGeoLocation === 'function' 
+    ? resolveSmartGeoLocation(cleanSlug, 'India')
+    : (cleanSlug.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) + ', India');
+  const shortName = fullName.split(',')[0].trim();
 
-  if (!loc) {
-    const cleanRaw = cleanSlug.replace(/-(phase|road|sector|extension|colony|layout|apartments|gated-community|main-road|cross|junction|street|lane|marg|avenue)$/i, '');
-    const raw = cleanRaw.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-    return {
-      shortName: raw,
-      fullName: raw,
-      state: 'India',
-      city: '',
-      district: ''
-    };
-  }
-
-  const shortName = loc.name;
-  let fullName = '';
-
-  if (loc.parent_type === 'city_area') {
-    // City Area -> Area Name, City Name, State Name (e.g. Madhapur, Hyderabad, Telangana)
-    fullName = loc.name + ', ' + loc.city + ', ' + loc.state;
-  } else if (loc.parent_type === 'district_area') {
-    // District Area -> Area Name, District Name, State Name (e.g. Sanand, Ahmedabad, Gujarat)
-    fullName = loc.name + ', ' + loc.district + ', ' + loc.state;
-  } else if (loc.parent_type === 'city') {
-    // Major City -> City Name, State Name (e.g. Hyderabad, Telangana)
-    fullName = loc.city + ', ' + loc.state;
-  } else if (loc.parent_type === 'district') {
-    // District -> District Name, State Name (e.g. Solapur, Maharashtra)
-    fullName = loc.district + ', ' + loc.state;
-  } else {
-    fullName = loc.state ? (loc.name + ', ' + loc.state) : loc.name;
-  }
+  let state = 'India';
+  if (fullName.includes('Telangana')) state = 'Telangana';
+  else if (fullName.includes('Andhra Pradesh')) state = 'Andhra Pradesh';
+  else if (fullName.includes('Karnataka')) state = 'Karnataka';
+  else if (fullName.includes('Tamil Nadu')) state = 'Tamil Nadu';
+  else if (fullName.includes('Maharashtra')) state = 'Maharashtra';
+  else if (fullName.includes('Gujarat')) state = 'Gujarat';
+  else if (fullName.includes('Uttar Pradesh')) state = 'Uttar Pradesh';
+  else if (fullName.includes('Kerala')) state = 'Kerala';
 
   return {
     shortName,
     fullName,
-    state: loc.state || 'India',
-    city: loc.city || '',
-    district: loc.district || ''
+    state,
+    city: '',
+    district: ''
   };
 }
 // Human-friendly Service Name & Image Resolver
@@ -161,12 +139,12 @@ function generateWhatsAppUrl(serviceSlug, locationSlug, pageUrl) {
     : 'Please share pricing per sq ft, technical specifications, and installation availability.';
 
   let msg = [
-    `Hi GCM Safety Nets, I would like to inquire about ${serviceInfo.fullDisplayName} in ${locInfo.fullName}.`,
+    `Hi GCM Safety Nets, I would like to inquire about *${serviceInfo.fullDisplayName}* in *${locInfo.fullName}*.`,
     '',
-    `* Service: ${serviceInfo.fullDisplayName}`,
-    `* Location: ${locInfo.fullName}`,
-    `* Page: ${pageUrl}`,
-    `* Website: www.gcmsafetynets.com`,
+    `• Service: ${serviceInfo.fullDisplayName}`,
+    `• Location: ${locInfo.fullName}`,
+    `• Page: ${pageUrl}`,
+    `• Website: www.gcmsafetynets.com`,
     '',
     closingLine
   ].join(String.fromCharCode(10));
@@ -216,7 +194,10 @@ app.get('/sitemap.xml', (req, res) => {
   res.setHeader('Cache-Control', 'no-cache, must-revalidate');
 
   const today = new Date().toISOString().split('T')[0];
-  const totalChunks = 60; // 60 sitemaps * 50,000 URLs = 3,000,000 URLs
+  const serviceIntentsCount = (geoDb.services.length || 18) * (geoDb.intents.length || 4);
+  let totalCombinations = (geoDb.locations.length || 1) * serviceIntentsCount;
+  const chunkSize = 50000;
+  const totalChunks = Math.ceil(totalCombinations / chunkSize); // 62 sitemaps for 3,082,968 URLs
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
@@ -275,8 +256,13 @@ app.get('/sitemap-core.xml', (req, res) => {
 
 // Dynamic 50,000-URL Chunked Sitemaps: /sitemap-:id.xml (1 to 60)
 app.get('/sitemap-:id.xml', (req, res) => {
+  const serviceIntentsCount = (geoDb.services.length || 18) * (geoDb.intents.length || 4);
+  let totalCombinations = (geoDb.locations.length || 1) * serviceIntentsCount;
+  const chunkSize = 50000;
+  const totalChunks = Math.ceil(totalCombinations / chunkSize);
+
   const chunkId = parseInt(req.params.id, 10);
-  if (isNaN(chunkId) || chunkId < 1 || chunkId > 60) {
+  if (isNaN(chunkId) || chunkId < 1 || chunkId > totalChunks) {
     return res.status(404).send('Sitemap chunk not found');
   }
 
@@ -284,7 +270,6 @@ app.get('/sitemap-:id.xml', (req, res) => {
   res.setHeader('Cache-Control', 'no-cache, must-revalidate');
 
   const today = new Date().toISOString().split('T')[0];
-  const chunkSize = 50000;
   const startIndex = (chunkId - 1) * chunkSize;
   const endIndex = startIndex + chunkSize;
 
@@ -300,7 +285,7 @@ app.get('/sitemap-:id.xml', (req, res) => {
   }
 
   const totalLocs = geoDb.locations.length > 0 ? geoDb.locations.length : 1;
-  const totalCombinations = totalLocs * serviceIntents.length;
+  totalCombinations = totalLocs * serviceIntents.length;
 
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
@@ -430,6 +415,16 @@ function renderProgrammaticPage(cityTemplate, serviceSlug, locationSlug) {
 
   return rendered;
 }
+// Auto-redirect hyphenated slugs /service-in-location -> /service/location
+app.get('/:slug([a-z0-9-]+-in-[a-z0-9-]+)', (req, res) => {
+  const slug = req.params.slug;
+  const match = slug.match(/^([a-z0-9-]+)-in-([a-z0-9-]+)$/i);
+  if (match) {
+    return res.redirect(301, '/' + match[1] + '/' + match[2]);
+  }
+  res.redirect(301, '/');
+});
+
 app.get('/:service/:location', (req, res) => {
   const serviceSlug = req.params.service;
   const locationSlug = req.params.location;
