@@ -179,29 +179,42 @@ document.addEventListener('DOMContentLoaded', function () {
   (function adaptWhatsAppLinks() {
     const path = window.location.pathname.replace(/^\/+|\/+$/g, '');
     let serviceName = '';
-    let cityName = '';
+    let locationSlug = '';
 
     if (path) {
       const parts = path.split('/');
       if (parts.length === 2 && parts[0] !== 'services' && parts[0] !== 'blog') {
-        // e.g. /anti-bird-net/indore or /balcony-safety-nets/mumbai
         serviceName = parts[0].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
-        cityName = parts[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+        locationSlug = parts[1];
       } else if (parts[0] === 'services' && parts[1]) {
         serviceName = parts[1].replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
       }
     }
 
-    let customMsg = 'Hi GCM Safety Nets, I need a safety net quote. Please share details and schedule a free survey.';
-    if (serviceName && cityName) {
-      customMsg = `Hi GCM Safety Nets, I am looking for ${serviceName} installation in ${cityName}. Please share details and schedule a free site survey.`;
-    } else if (serviceName) {
-      customMsg = `Hi GCM Safety Nets, I am looking for ${serviceName} installation. Please share details and schedule a free site survey.`;
-    }
+    const fullLocation = typeof resolveSmartGeoLocation === 'function'
+      ? resolveSmartGeoLocation(locationSlug || path, 'India')
+      : 'India';
+
+    serviceName = serviceName || 'Safety Nets & Anti Bird Protection';
+
+    const isClothHangers = /hanger|cloth|drying|stand/i.test(serviceName);
+    const pricingLine = isClothHangers
+      ? 'Please share pricing per piece / set, model options, technical specifications, and installation availability.'
+      : 'Please share pricing per sq ft, technical specifications, and installation availability.';
+
+    const customMsg = [
+      `Hi GCM Safety Nets, I would like to inquire about *${serviceName}* in *${fullLocation}*.`,
+      '',
+      `• Service: ${serviceName}`,
+      `• Location: ${fullLocation}`,
+      `• Page: ${window.location.href}`,
+      `• Website: www.gcmsafetynets.com`,
+      '',
+      pricingLine
+    ].join('\n');
 
     const waUrl = `https://wa.me/919912399224?text=${encodeURIComponent(customMsg)}`;
 
-    // Target the 3 main header and floating buttons
     const keyWaSelectors = [
       '.top-bar-wa',
       '.header .btn-whatsapp',
@@ -216,3 +229,4 @@ document.addEventListener('DOMContentLoaded', function () {
   })();
 
 });
+
